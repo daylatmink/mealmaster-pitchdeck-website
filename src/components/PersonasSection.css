@@ -1,0 +1,64 @@
+.personas-section {
+    padding: 4rem 1rem;
+    text-align: center;
+    background: #fff;
+}
+
+.personas-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.personas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.persona-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.persona-img-wrapper {
+    position: relative;
+}
+
+.persona-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.persona-tag {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: #38a169;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+}
+
+.persona-quote {
+    font-size: 1rem;
+    font-style: italic;
+    margin: 1rem 1rem 0.5rem;
+    flex: 1;
+}
+
+.persona-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0 1rem 1rem;
+    text-align: left;
+}

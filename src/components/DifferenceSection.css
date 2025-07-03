@@ -1,0 +1,42 @@
+.difference-section {
+    padding: 4rem 1rem;
+    text-align: center;
+    background: #fff;
+}
+
+.difference-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.difference-table {
+    display: grid;
+    max-width: 900px;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 2px solid #e2e8f0;
+}
+
+.difference-row {
+    display: contents;
+}
+
+.difference-row div {
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    border-left: 1px solid #e2e8f0;
+}
+
+.difference-row.header div {
+    background: #f9fafb;
+    font-weight: 600;
+}
+
+.difference-row div:first-child {
+    font-weight: 500;
+}
+
+.difference-table div:nth-child(4n + 1) {
+    border-left: none;
+}

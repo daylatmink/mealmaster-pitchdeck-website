@@ -1,0 +1,39 @@
+.problem-section {
+    background-color: #f9fafb; /* xám nhạt */
+    padding: 4rem 1rem;
+}
+
+.problem-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.problem-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.problem-subline {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #4a5568; /* gray-700 */
+}
+
+.problem-list {
+    text-align: left;
+    list-style-type: disc;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    color: #4a5568;
+}
+
+.problem-list li {
+    margin-bottom: 0.5rem;
+}
+
+.problem-conclusion {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
