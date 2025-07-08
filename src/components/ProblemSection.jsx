@@ -2,8 +2,10 @@ import React from "react";
 import "./ProblemSection.css";
 
 const ProblemSection = () => {
+
     return (
         <section className="problem-section">
+
             <div className="problem-container">
                 <h2 className="problem-title">
                     Nấu ăn lành mạnh tưởng dễ, nhưng lại khiến nhiều người bối rối mỗi ngày
