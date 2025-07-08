@@ -7,7 +7,7 @@ const HeroSection = () => {
         <section className="hero-section">
             {/* Background image */}
             <div className="hero-bg">
-                <img src="/assets/img.png" alt="Kitchen Background" />
+                <img src="/assets/kitchen.png" alt="Kitchen Background" />
             </div>
 
             {/* Shape SVG wave */}
@@ -57,16 +57,22 @@ const HeroSection = () => {
                 <p className="hero-headline">
                     KHÔNG CÒN PHẢI NGHĨ <br /><span>“HÔM NAY ĂN GÌ”</span>
                 </p>
-                <p className="hero-subtitle">
-                    MealMaster giúp bạn lên thực đơn theo mục tiêu sức khỏe, chia khẩu phần đúng lượng và giao nguyên liệu tận tay – dễ dàng, lành mạnh, không lãng phí.
-                </p>
+
             </div>
         </section>
 
-        <div className="hero-cta">
-            <a href="#faq" className="btn-cta faq">FAQ</a>
-            <a href="#explore" className="btn-cta explore">Explore</a>
-        </div>
+            <nav className="hero-bottom-nav">
+                <p className="hero-subtitle">
+                    MealMaster giúp bạn lên thực đơn theo mục tiêu sức khỏe, chia khẩu phần đúng lượng và giao nguyên liệu tận tay – dễ dàng, lành mạnh, không lãng phí.
+                </p>
+                <a href="#faq" className="btn-cta faq">
+                    FAQ <span className="icon">▶</span>
+                </a>
+                <a href="#explore" className="btn-cta explore">
+                    Explore <span className="icon">▶</span>
+                </a>
+            </nav>
+
         </>
     );
 };
