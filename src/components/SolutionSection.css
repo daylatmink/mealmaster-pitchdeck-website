@@ -1,41 +1,62 @@
 .solution-section {
-    padding: 4rem 1rem;
-    background-color: #fff;
     text-align: center;
+    padding: 60px 40px;
+    background: #fff; /* hoặc màu nền chính */
 }
 
 .solution-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 50px;
 }
 
-.solution-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
+.solution-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
 .solution-card {
-    background-color: #f9fafb;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    width: 220px;
+    height: 280px;
+    background: linear-gradient(135deg, #8EC5FC 0%, #E0C3FC 100%);
+    border-radius: 20px;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     transition: transform 0.3s ease;
 }
-
+.solution-card:nth-child(1) {
+    background: linear-gradient(135deg, #FDB99B 0%, #CF8BF3 100%);
+    justify-content: center;
+}
+.solution-card:nth-child(2) {
+    background: linear-gradient(135deg, #89F7FE 0%, #66A6FF 100%);
+    justify-content: center;
+}
+.solution-card:nth-child(3) {
+    background: linear-gradient(135deg, #FDB99B 0%, #CF8BF3 100%);
+    justify-content: center;
+}
+.solution-card:nth-child(4) {
+    background: linear-gradient(135deg, #89F7FE 0%, #66A6FF 100%);
+    justify-content: center;
+}
 .solution-card:hover {
     transform: translateY(-5px);
 }
 
-.solution-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.solution-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-.solution-card-title {
-    font-size: 1.1rem;
-    font-weight: 500;
+.solution-card-text {
+    font-size: 1rem;
+    line-height: 1.4;
 }

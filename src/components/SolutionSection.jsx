@@ -26,15 +26,26 @@ const SolutionSection = () => {
             <h2 className="solution-title">
                 Giải pháp toàn diện, từ thực đơn đến tận tay
             </h2>
-            <div className="solution-grid">
-                {features.map((item, index) => (
-                    <div className="solution-card" key={index}>
-                        <div className="solution-icon">{item.icon}</div>
-                        <h3 className="solution-card-title">{item.title}</h3>
-                    </div>
-                ))}
+            <div className="solution-cards">
+                <div className="solution-card">
+                    <h3 className="solution-card-title">Dễ dàng</h3>
+                    <p className="solution-card-text">MealMaster gợi ý sẵn theo mục tiêu của bạn</p>
+                </div>
+                <div className="solution-card">
+                    <h3 className="solution-card-title">Không lãng phí</h3>
+                    <p className="solution-card-text">Nguyên liệu được chia đúng khẩu phần, không lãng phí</p>
+                </div>
+                <div className="solution-card">
+                    <h3 className="solution-card-title">Lành mạnh</h3>
+                    <p className="solution-card-text">MealMaster theo dõi thói quen ăn uống để giúp khách hàng cân bằng dinh dưỡng</p>
+                </div>
+                <div className="solution-card">
+                    <h3 className="solution-card-title">Tiện lợi</h3>
+                    <p className="solution-card-text">MealMaster giúp bạn có sẵn nguyên liệu – đúng món – đúng bữa – ngay tại cửa</p>
+                </div>
             </div>
         </section>
+
     );
 };
 

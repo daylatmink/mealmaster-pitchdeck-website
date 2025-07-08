@@ -35,8 +35,8 @@ const HeroSection = () => {
                 </div>
 
                 <div className="nav-auth">
-                    <button className="nav-btn nav-signup">sign up</button>
-                    <button className="nav-btn nav-login">login</button>
+                    <button className="nav-btn nav-signup">Sign up</button>
+                    <button className="nav-btn nav-login">Login</button>
                 </div>
             </nav>
 
