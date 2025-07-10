@@ -1,0 +1,9 @@
+export { default as DifferenceSection } from "./DifferenceSection";
+export { default as FAQSection } from "./FAQSection";
+export { default as FeaturesSection } from "./FeaturesSection";
+export { default as HeroSection } from "./HeroSection";
+export { default as MarketStatsSection } from "./MarketStatsSection";
+export { default as PersonasSection } from "./PersonasSection";
+export { default as ProblemSection } from "./ProblemSection";
+export { default as RecruitSection } from "./RecruitSection";
+export { default as SolutionSection } from "./SolutionSection";
