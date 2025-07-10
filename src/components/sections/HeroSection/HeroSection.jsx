@@ -1,13 +1,13 @@
 import React from "react";
 import "./HeroSection.css";
-
+import IconButton from "../../buttons/IconButton"
 const HeroSection = () => {
     return (
         <>
-        <section className="hero-section">
+            <section className="hero-section">
             {/* Background image */}
             <div className="hero-bg">
-                <img src="/assets/kitchen.png" alt="Kitchen Background" />
+                <img src="/assets/meal.jpg" alt="Kitchen Background" />
             </div>
 
             {/* Shape SVG wave */}
@@ -18,27 +18,6 @@ const HeroSection = () => {
             />
 
             {/* Top Nav */}
-            <nav className="hero-nav">
-                <div className="nav-left">
-                    <div className="nav-group">
-                        <div className="nav-search">
-                            <span className="search-icon">🔍</span>
-                        </div>
-
-                        <ul className="nav-links">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Service</a></li>
-                            <li><a href="#">Community</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div className="nav-auth">
-                    <button className="nav-btn nav-signup">Sign up</button>
-                    <button className="nav-btn nav-login">Login</button>
-                </div>
-            </nav>
 
             {/* Content */}
             <div className="hero-inner">
@@ -65,14 +44,11 @@ const HeroSection = () => {
                 <p className="hero-subtitle">
                     MealMaster giúp bạn lên thực đơn theo mục tiêu sức khỏe, chia khẩu phần đúng lượng và giao nguyên liệu tận tay – dễ dàng, lành mạnh, không lãng phí.
                 </p>
-                <a href="#faq" className="btn-cta faq">
-                    FAQ <span className="icon">▶</span>
-                </a>
-                <a href="#explore" className="btn-cta explore">
-                    Explore <span className="icon">▶</span>
-                </a>
+                <div className="hero-buttons">
+                    <IconButton href="#faq" label="FAQ"/>
+                    <IconButton href="#explore" label="Explore" />
+                </div>
             </nav>
-
         </>
     );
 };

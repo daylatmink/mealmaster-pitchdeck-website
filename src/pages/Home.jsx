@@ -1,19 +1,19 @@
 import React from "react";
+
+import Header from "../components/layout/Header";
 import {
-    HeroSection,
-    ProblemSection,
-    SolutionSection,
-    FeaturesSection,
-    DifferenceSection,
+    DifferenceSection, FAQSection,
+    FeaturesSection, Footer,
+    HeroSection, MarketStatsSection,
     PersonasSection,
-    MarketStatsSection,
-    FAQSection,
-    RecruitSection,
-    Footer,
-} from "../components"; 
+    ProblemSection, RecruitSection,
+    SolutionSection
+} from "../components";
+
 
 const Home = () => (
     <main>
+        <Header />
         <HeroSection />
         <ProblemSection />
         <SolutionSection />
