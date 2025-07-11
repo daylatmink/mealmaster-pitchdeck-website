@@ -1,8 +1,8 @@
 .icon-button {
     position: relative;
     display: inline-block;
-    width: 200px;   /* hoặc 100% theo parent */
-    height: 60px;
+    width: 370px;   /* hoặc 100% theo parent */
+    height: 100px;
     text-decoration: none;
 }
 
@@ -19,5 +19,5 @@
     transform: translate(-50%, -50%);
     color: white;           /* đổi màu cho rõ */
     font-weight: bold;
-    font-size: 18px;
+    font-size: 50px;
 }

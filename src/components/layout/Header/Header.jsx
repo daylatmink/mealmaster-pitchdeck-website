@@ -1,5 +1,8 @@
 import React from "react";
 import "./Header.css";
+
+import SearchIcon from './searchicon.svg';
+
 const Header = () => {
     return (
         <header className="header">
@@ -7,11 +10,12 @@ const Header = () => {
                 <div className="nav-left">
                     <div className="nav-group">
                         <div className="nav-search">
-                            <span className="search-icon">🔍</span>
+                            <img src={SearchIcon} id="SearchIcon" />
                         </div>
                         <div className="logo">
                             <img src="/assets/logo.png" class="logo" alt="MealMaster" />
                         </div>
+                        
                         <ul className="nav-links">
                             <li><a href="#">About</a></li>
                             <li><a href="#">Pricing</a></li>
