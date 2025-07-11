@@ -1,10 +1,13 @@
 .icon-button {
     position: relative;
     display: inline-block;
-    width: 370px;   /* hoặc 100% theo parent */
+    width: 370px;
     height: 100px;
     text-decoration: none;
+    background: #214ECF;
+    border-radius: 50px;
 }
+
 
 .icon-button .shape {
     display: block;
