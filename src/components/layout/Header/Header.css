@@ -1,6 +1,6 @@
 .header {
     background-color: #214ECF;
-    height: 100px;
+    height: 145px;
 }
 
 .logo {
@@ -35,9 +35,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.2);
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 50px 50px 50px 50px;
@@ -46,28 +46,37 @@
     cursor: pointer;
 }
 
+.nav-search img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain; 
+}
+
 /* Nav links capsule */
 .nav-links {
     display: flex;
     align-items: center;
     gap: 30px;
     list-style: none;
-    height: 40px;
+    height: 50px;
     padding: 5px 30px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(15px);
     border: 2px solid rgba(255, 255, 255, 0.5);
     margin: auto;
-    margin-left: 500px;
+    margin-left: 350px;
+    width: 450px;
     border-radius: 50px 50px 50px 50px;
-
+    font-size: 20px;
 }
+
 
 .nav-links a {
     color: #000;
     text-decoration: none;
     font-weight: 500;
     line-height: 1;
+    margin: 9px;
 }
 
 /* Auth buttons */
@@ -77,17 +86,19 @@
 }
 
 .nav-btn {
-    background: #fff;
+    background: #ffffff;
     color: #000;
     border: none;
     padding: 8px 20px;
-    border-radius: 999px;
+    border-radius: 25px;
     cursor: pointer;
     font-weight: bold;
-    height: 40px;
+    font-size: 35px;
+    height: 85px;
+    width: 190px;
     display: flex;
     align-items: center;
-    opacity: 0.7; /* Tạo hiệu ứng mờ */
+    opacity: 0.9; /* Tạo hiệu ứng mờ */
     transition: opacity 0.3s ease; /* Thêm hiệu ứng mờ khi hover */
 }
 .nav-btn:hover {
@@ -96,7 +107,7 @@
     transition: all 0.2s ease;
 }
 .nav-login {
-    background: transparent;
+    background: #F2674A;
     color: #fff;
-    border: 2px solid #fff;
+    border: 2px solid #F2674A;
 }

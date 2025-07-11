@@ -5,40 +5,40 @@ const HeroSection = () => {
     return (
         <>
             <section className="hero-section">
-            {/* Background image */}
-            <div className="hero-bg">
-                <img src="/assets/meal.jpg" alt="Kitchen Background" />
-            </div>
-
-            {/* Shape SVG wave */}
-            <img
-                src="/assets/exHeroWave.svg"
-                alt="Hero Shape"
-                className="hero-shape"
-            />
-
-            {/* Top Nav */}
-
-            {/* Content */}
-            <div className="hero-inner">
-                <h1 className="hero-title">
-                    MealMaster – Trợ lý bữa ăn cá nhân hoá đầu tiên tại Việt Nam
-                </h1>
-
-                <div className="hero-badges">
-                    <span className="badge badge-1">Dễ dàng</span>
-                    <span className="badge badge-2">Tiện lợi</span>
-                    <span className="badge badge-3">Lành mạnh</span>
-                    <span className="badge badge-4">Không lãng phí</span>
+                {/* Background image */}
+                <div className="hero-bg">
+                    <img src="/assets/meal.jpg" alt="Kitchen Background" />
                 </div>
-            </div>
-            <div className="hero-lower-text">
-                <p className="hero-headline">
-                    KHÔNG CÒN PHẢI NGHĨ <br /><span>“HÔM NAY ĂN GÌ”</span>
-                </p>
 
-            </div>
-        </section>
+                {/* Shape SVG wave */}
+                <img
+                    src="/assets/exHeroWave.svg"
+                    alt="Hero Shape"
+                    className="hero-shape"
+                />
+
+                {/* Top Nav */}
+
+                {/* Content */}
+                <div className="hero-inner">
+                    <h1 className="hero-title">
+                        MealMaster – Trợ lý bữa ăn <br></br>cá nhân hoá đầu tiên tại Việt Nam
+                    </h1>
+
+                    <div className="hero-badges">
+                        <span className="badge badge-1">Dễ dàng</span>
+                        <span className="badge badge-2">Tiện lợi</span>
+                        <span className="badge badge-3">Lành mạnh</span>
+                        <span className="badge badge-4">Không lãng phí</span>
+                    </div>
+                </div>
+                <div className="hero-lower-text">
+                    <p className="hero-headline">
+                        KHÔNG CÒN PHẢI NGHĨ <br /><span>“HÔM NAY ĂN GÌ”</span>
+                    </p>
+
+                </div>
+            </section>
 
             <nav className="hero-bottom-nav">
                 <p className="hero-subtitle">
