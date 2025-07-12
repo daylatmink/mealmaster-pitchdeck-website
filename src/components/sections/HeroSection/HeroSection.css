@@ -119,28 +119,18 @@
 /* =============== CTA =============== */
 
 .hero-bottom-nav {
-    display: flex;
     gap: 20px;
-    margin-top: 0;    /* Kéo ra ngoài wave */
-    padding-left: 50px;   /* Căn trái như text */
-    align-items: center;
+    padding-left: 50px;  
     font-family: 'Montserrat', sans-serif;
     background: #fff;
-}
-
-.btn-cta {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;                 /* nếu màn hình nhỏ thì xuống hàng */
+    
+    display: flex;
+    justify-content: space-between;  /* subtitle bên trái - nút bên phải */
+    
     gap: 20px;
-    padding: 24px 70px;
-    border-radius: 40px; /* Tạo hình tròn mềm mại cho nút */
-    font-weight: bold;
-    font-size: 1.4rem;
-    text-decoration: none;
-    color: #000;
-    position: relative; /* Để tạo hiệu ứng bóng đổ */
-    overflow: hidden;
+    padding: 0px;
+    margin-bottom: 50px;
 }
 
 
@@ -165,11 +155,6 @@
     padding-left: 100px;
 }
 
-.btn-cta:hover {
-    transform: scale(1.05); /* Tăng kích thước nút khi hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Tạo bóng đổ nhẹ khi hover */
-    transition: all 0.3s ease;
-}
 .faq:hover {
     transform: scale(1.05);
     transition: all 0.2s ease;
@@ -177,14 +162,6 @@
 .explore:hover {
     transform: scale(1.05);
     transition: all 0.2s ease;
-}
-.hero-bottom-nav {
-    display: flex;
-    justify-content: space-between;  /* subtitle bên trái - nút bên phải */
-    align-items: center;
-    flex-wrap: wrap;                 /* nếu màn hình nhỏ thì xuống hàng */
-    gap: 20px;
-    padding: 20px 0;
 }
 
 .hero-subtitle {
@@ -194,7 +171,8 @@
     max-width: 850px;                /* giữ text không quá dài */
     text-align: left;
     flex: 1;
-    margin-left: 50px;
+    margin: 0px;
+    margin-left: 35px;
 }
 
 .hero-buttons {
@@ -212,7 +190,7 @@
     font-weight: bold;
     text-decoration: none;
     padding: 14px 30px;
-    border-radius: 25px;    /* pill shape */
+    border-radius: 25px;    
     font-size: 18px;
     transition: background 0.3s ease;
 }

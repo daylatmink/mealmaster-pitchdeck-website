@@ -1,18 +1,23 @@
 import React from "react";
 import "./HeroSection.css";
 import IconButton from "../../buttons/IconButton"
+
+import meal from "./meal.jpg"
+import exHeroWave from "./exHeroWave.svg"
+import HeroWave from "./HeroWave.svg"
+
 const HeroSection = () => {
     return (
         <>
             <section className="hero-section">
                 {/* Background image */}
                 <div className="hero-bg">
-                    <img src="/assets/meal.jpg" alt="Kitchen Background" />
+                    <img src={meal} alt="Kitchen Background" />
                 </div>
 
                 {/* Shape SVG wave */}
                 <img
-                    src="/assets/exHeroWave.svg"
+                    src={exHeroWave}
                     alt="Hero Shape"
                     className="hero-shape"
                 />
