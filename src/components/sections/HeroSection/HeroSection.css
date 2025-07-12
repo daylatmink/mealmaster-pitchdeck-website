@@ -181,6 +181,15 @@
     margin-right: 30px;
 }
 
+.hero-buttons .icon-button {
+    padding: 20px 40px;
+}
+
+.hero-buttons .label {
+    font-size: 4rem;
+    padding: 0px 120px 0px 20px;
+}
+
 .icon-button {
     display: inline-flex;
     align-items: center;

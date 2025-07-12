@@ -1,12 +1,17 @@
 .problem-section {
     display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Sát lề trái */
+    justify-content: space-between; /* Sát lề trái */
     gap: 100px;
     flex-wrap: wrap;
-    padding: 60px 20px;
     background: #214ECF;
+    padding-top: 10px;
 }
+
+
+
+
+
+
 .problem-left {
     display: flex;
     flex-direction: column;
@@ -15,90 +20,28 @@
     max-width: 40%;
 }
 .problem-left img {
-    width: 200%;  /* Cho to hơn box cha */
+    width: 250%;  /* Cho to hơn box cha */
     height: auto;
     display: block;
-    margin-left: -10%; /* Đẩy trái cho sát lề */
+    margin: -90px 0px 0px 150px
 }
 
 .problem-buttons {
     display: flex;
     gap: 30px;
-    margin-top: 20px;
-}
-
-.problem-right {
-    flex: 1;
-    max-width: 50%;
-    justify-content: flex-start;
-}
-
-.problem-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 24px;
-    color: #fff; /* tuỳ background */
-}
-
-.problem-icons {
-    display: flex;
-    justify-content: center;   /* Căn giữa hàng ngang */
-    align-items: flex-start;   /* Cho caption thẳng đều */
-    gap: 15%;               /* Khoảng cách giữa item */
-    flex-wrap: wrap;           /* Cho responsive khi hẹp */
-}
-
-.problem-icon-box {
-    background: #F2674A;  /* Cam */
-    border-radius: 50px;
-    width: 150px;
     height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    margin: -120px 0px 60px 150px;
 }
 
-.problem-icon-box img {
-    width: 100%;        /* Bao phủ chiều ngang box */
-    height: 100%;       /* Bao phủ chiều dọc box */
-    object-fit: cover;  /* Bảo toàn tỉ lệ */
-    transform: scale(2);
+.problem-buttons .icon-button {
+    padding: 40px 20px;
 }
 
-
-.problem-caption {
-    margin-top: 8px;
-    color: #fff;          /* text trắng */
-    font-size: 1.3rem;
-    font-weight: 500;
-    line-height: 1;
-}
-.problem-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 120px;
-    text-align: center;
+.problem-buttons .label {
+    font-size: 3rem;
+    padding: 0px 53px 0px 0px;
 }
 
-.problem-item img {
-    width: 60px;
-    height: 60px;
-}
-
-.problem-arrow {
-    margin: 20px 0;
-    text-align: center;
-}
-
-.problem-cta {
-    font-size: 2rem;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #F5EEE6;
-}
 .button1 {
     background: #F2674A;
     border-radius: 50px;
@@ -116,4 +59,89 @@
     transform: scale(1.05);
     transition: transform .2s;
     background: #F2674A;
+}
+
+
+
+
+
+
+
+
+.problem-right {
+    flex: 1;
+    max-width: 50%;
+    justify-content: flex-start;
+}
+
+.problem-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #fff; /* tuỳ background */
+}
+
+.problem-icons {
+    display: flex;
+    justify-content: center;   /* Căn giữa hàng ngang */
+    align-items: flex-start;   /* Cho caption thẳng đều */
+    gap: 13%;
+    margin-top: 50px;
+    margin-left: -50px;               /* Khoảng cách giữa item */
+    flex-wrap: wrap;           /* Cho responsive khi hẹp */
+}
+
+.problem-icon-box {
+    background: #F2674A;  /* Cam */
+    border-radius: 50px;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.problem-icon-box img {
+    width: 100%;        /* Bao phủ chiều ngang box */
+    height: 100%;       /* Bao phủ chiều dọc box */
+    object-fit: cover;  /* Bảo toàn tỉ lệ */
+    transform: scale(2.3);
+}
+
+
+.problem-caption {
+    margin-top: 8px;
+    color: #fff;          /* text trắng */
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    width: 180px;
+}
+.problem-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 120px;
+    text-align: center;
+}
+
+.problem-item img {
+    width: 60px;
+    height: 60px;
+}
+
+.problem-arrow {
+    text-align: center;
+    margin-top: -40px;
+    margin-left: -65px;
+}
+
+.problem-cta {
+    font-size: 3.2rem;
+    font-weight: 500;
+    text-align: left;
+    font-weight: bold;
+    margin-top: -5px;
+    color: #F5EEE6;
 }
