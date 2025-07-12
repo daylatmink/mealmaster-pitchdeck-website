@@ -18,8 +18,8 @@
 }
 
 .solution-card {
-    width: 220px;
-    height: 280px;
+    width: 250px;
+    height: 350px;
     background: linear-gradient(135deg, #8EC5FC 0%, #E0C3FC 100%);
     border-radius: 20px;
     color: #fff;
@@ -33,19 +33,25 @@
 .solution-card:nth-child(1) {
     background: #214ECF;
     justify-content: center;
+    margin-top: 30px;
+    transform: translateY(30px);
 }
 .solution-card:nth-child(2) {
     background: #F2674A;
     justify-content: center;
-    transform: translateY(-20px);
+    margin-top: 30px;
+    transform: translateY(-30px);
 }
 .solution-card:nth-child(3) {
     background: #214ECF;
     justify-content: center;
+    margin-top: 30px;
+    transform: translateY(30px);
 }
 .solution-card:nth-child(4) {
     background: #F2674A;
     justify-content: center;
+    margin-top: 30px;
     transform: translateY(-20px);
 
 }
@@ -53,13 +59,19 @@
     transform: translateY(-5px);
 }
 
+.solution-card-img {
+    transform: scale(0.6);
+    margin-bottom: -50px;
+}
+
 .solution-card-title {
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: -10px;
 }
 
 .solution-card-text {
-    font-size: 1rem;
-    line-height: 1.4;
+    font-size: 1.25rem;
+    font-weight:500;
+    line-height: 1.2;
 }
