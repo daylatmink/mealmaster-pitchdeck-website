@@ -9,6 +9,7 @@ import {
     ProblemSection, RecruitSection,
     SolutionSection
 } from "../components";
+import JoinSection from "../components/sections/JoinSection/JoinSection";
 
 
 const Home = () => (
@@ -22,6 +23,7 @@ const Home = () => (
         <PersonasSection />
         <MarketStatsSection />
         <FAQSection />
+        <JoinSection />
         <RecruitSection />
         <Footer />
     </main>

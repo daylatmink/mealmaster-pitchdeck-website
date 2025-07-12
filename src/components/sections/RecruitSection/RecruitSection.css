@@ -5,20 +5,22 @@
 }
 
 .recruit-title {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
-    max-width: 800px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    white-space: nowrap;
 }
 
-.recruit-desc {
-    font-size: 1rem;
-    color: #4a5568;
-    max-width: 700px;
-    margin: 0 auto 2rem;
-}
+/*.recruit-desc {*/
+/*    font-size: 1rem;*/
+/*    color: #4a5568;*/
+/*    max-width: 700px;*/
+/*    margin: 0 auto 2rem;*/
+/*    white-space: nowrap;*/
+/*}*/
 
 .recruit-cta {
     display: flex;
@@ -37,23 +39,28 @@
 }
 
 .btn-primary {
-    background: #38a169;
+    background: #F2674A;
     color: #fff;
 }
 
 .btn-primary:hover {
-    background: #2f855a;
+    opacity: 1.1;
+    transform: scale(1.05);
 }
 
 .btn-secondary {
-    border: 2px solid #38a169;
-    color: #38a169;
+    background: #214ECF;
+    color: #fff;
 }
 
 .btn-secondary:hover {
-    background: #f0fff4;
+    opacity: 1.1;
+    transform: scale(1.05);
 }
-
+.recruit-con {
+    font-size: larger;
+    font-weight: bold;
+}
 @media (min-width: 640px) {
     .recruit-cta {
         flex-direction: row;
