@@ -1,13 +1,10 @@
 .icon-button {
     position: relative;
     display: inline-block;
-    width: 370px;
-    height: 100px;
     text-decoration: none;
     background: #214ECF;
     border-radius: 50px;
 }
-
 
 .icon-button .shape {
     display: block;
@@ -16,11 +13,8 @@
 }
 
 .icon-button .label {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;           /* đổi màu cho rõ */
+    position: relative; /* không cần absolute nếu không định căn giữa theo phần tử cha */
+    color: white;
     font-weight: bold;
-    font-size: 50px;
+    white-space: nowrap; /* nếu muốn không bị xuống dòng */
 }

@@ -13,6 +13,7 @@ import arrow from "./arrow.png"
 const ProblemSection = () => {
     return (
         <section className="problem-section">
+
             <div className="problem-left">
                 <img src={woman} alt="Confused Person"/>
                 <div className="problem-buttons">
@@ -20,7 +21,9 @@ const ProblemSection = () => {
                     <IconButton label="Đăng ký ngay" href="#signup" className="button2" />
                 </div>
             </div>
+
             <div className="problem-right">
+
                 <h2 className="problem-title">
                     Nấu ăn lành mạnh tưởng dễ, <br />
                     nhưng lại khiến nhiều người bối rối mỗi ngày
@@ -63,8 +66,8 @@ const ProblemSection = () => {
 
                 <p className="problem-cta">Nếu bạn muốn A B C D gì đó, hãy tải MealMaster!</p>
 
-
             </div>
+
         </section>
     );
 };
