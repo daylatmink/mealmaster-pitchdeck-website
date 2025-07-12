@@ -37,6 +37,7 @@ const SolutionSection = () => {
         </section>
 
     );
+    
 };
 
 export default SolutionSection;
