@@ -1,15 +1,19 @@
 import React from "react";
 
-import Header from "../components/layout/Header";
+import { Header, Footer } from "../components/layout";
 import {
-    DifferenceSection, FAQSection,
-    FeaturesSection, Footer,
-    HeroSection, MarketStatsSection,
-    PersonasSection,
-    ProblemSection, RecruitSection,
-    SolutionSection
+    HeroSection, 
+    ProblemSection, 
+    SolutionSection,
+
+    DifferenceSection, 
+    MarketStatsSection,
+    StatementSection,
+
+    FAQSection,
+    JoinSection,
+    RecruitSection,
 } from "../components";
-import JoinSection from "../components/sections/JoinSection/JoinSection";
 
 
 const Home = () => (
@@ -18,10 +22,11 @@ const Home = () => (
         <HeroSection />
         <ProblemSection />
         <SolutionSection />
-        <FeaturesSection />
+
         <DifferenceSection />
-        <PersonasSection />
         <MarketStatsSection />
+        <StatementSection />
+
         <FAQSection />
         <JoinSection />
         <RecruitSection />

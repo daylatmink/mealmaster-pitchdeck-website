@@ -3,10 +3,10 @@ import "./DifferenceSection.css"; // nếu bạn muốn CSS riêng
 
 const DifferenceSection = () => {
     const data = [
-        { feature: "Lên thực đơn", grocery: false, diet: true, mealmaster: true },
-        { feature: "Giao nguyên liệu", grocery: true, diet: false, mealmaster: true },
-        { feature: "Chia khẩu phần", grocery: false, diet: false, mealmaster: true },
-        { feature: "Theo dõi lịch ăn", grocery: false, diet: true, mealmaster: true },
+        { feature: "Cá nhân hóa thực đơn", mealmaster: true, shipping: false, shopping: false, fitness: true },
+        { feature: "Gợi ý và chia khẩu phần", mealmaster: true, shipping: false, shopping: false, fitness: true },
+        { feature: "Đi chợ hộ từng bữa", mealmaster: true, shipping: true, shopping: true, fitness: false },
+        { feature: "Giao nguyên liệu theo bữa", mealmaster: true, shipping: false, shopping: true, fitness: false },
     ];
 
     return (
@@ -15,20 +15,28 @@ const DifferenceSection = () => {
                 Không giống app đi chợ, không giống app ăn kiêng
             </h2>
             <div className="difference-table">
+                
                 <div className="difference-row header">
-                    <div></div>
-                    <div>App đi chợ</div>
-                    <div>App ăn kiêng</div>
+                    <div>Tiện ích</div>
                     <div>MealMaster</div>
+                    <div>App đặt đồ ăn</div>
+                    <div>App đi chợ</div>
+                    <div>App fitness</div>
                 </div>
+
                 {data.map((row, idx) => (
-                    <div className="difference-row" key={idx}>
+                    <div
+                        className={`difference-row ${idx % 2 === 0 ? "even" : "odd"}`}
+                        key={idx}
+                    >
                         <div className="feature">{row.feature}</div>
-                        <div>{row.grocery ? "✅" : "❌"}</div>
-                        <div>{row.diet ? "✅" : "❌"}</div>
                         <div>{row.mealmaster ? "✅" : "❌"}</div>
+                        <div>{row.shipping ? "✅" : "❌"}</div>
+                        <div>{row.shopping ? "✅" : "❌"}</div>
+                        <div>{row.fitness ? "✅" : "❌"}</div>
                     </div>
                 ))}
+
             </div>
         </section>
     );
