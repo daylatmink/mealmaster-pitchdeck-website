@@ -1,42 +1,60 @@
 .difference-section {
-    padding: 4rem 1rem;
-    text-align: center;
-    background: #fff;
+    background-color: #1e4fcf; /* Nền xanh */
+    padding: 40px 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .difference-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
 }
 
 .difference-table {
-    display: grid;
-    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 800px;
     margin: 0 auto;
-    grid-template-columns: repeat(4, 1fr);
-    border-top: 2px solid #e2e8f0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.difference-row {
-    display: contents;
-}
-
-.difference-row div {
-    padding: 1rem;
-    border-bottom: 1px solid #e2e8f0;
-    border-left: 1px solid #e2e8f0;
-}
-
-.difference-row.header div {
-    background: #f9fafb;
+/* Header row */
+.difference-row.header {
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    background-color: #f35c2f;
+    color: white;
     font-weight: 600;
+    padding: 15px 10px;
+    text-align: center;
 }
 
-.difference-row div:first-child {
+/* Normal rows */
+.difference-row {
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    padding: 15px 10px;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+/* Chẵn / lẻ màu khác nhau */
+.difference-row.even {
+    background-color: #ffffff;
+}
+
+.difference-row.odd {
+    background-color: #f2ede9;
+}
+
+/* Cột đầu tiên (tên tính năng) căn trái */
+.difference-row .feature {
+    text-align: left;
+    padding-left: 10px;
     font-weight: 500;
-}
-
-.difference-table div:nth-child(4n + 1) {
-    border-left: none;
 }
