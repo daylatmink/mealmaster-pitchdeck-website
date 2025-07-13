@@ -1,60 +1,64 @@
 .difference-section {
-    background-color: #1e4fcf; /* Nền xanh */
-    padding: 40px 20px;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #0047FF;
+    padding: 60px 20px;
+    text-align: center;
 }
 
 .difference-title {
-    text-align: center;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.4;
+    margin-bottom: 40px;
     color: white;
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 30px;
 }
 
 .difference-table {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.difference-column {
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    border-radius: 12px;
-    overflow: hidden;
-    max-width: 800px;
-    margin: 0 auto;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Header row */
-.difference-row.header {
-    display: grid;
-    grid-template-columns: 2fr repeat(4, 1fr);
-    background-color: #f35c2f;
-    color: white;
-    font-weight: 600;
-    padding: 15px 10px;
-    text-align: center;
-}
-
-/* Normal rows */
-.difference-row {
-    display: grid;
-    grid-template-columns: 2fr repeat(4, 1fr);
-    padding: 15px 10px;
-    text-align: center;
+.difference-cell,
+.difference-header {
+    padding: 16px;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    min-height: 64px;
     font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
 }
 
-/* Chẵn / lẻ màu khác nhau */
-.difference-row.even {
-    background-color: #ffffff;
+.difference-header {
+    background-color: #FF6B4A;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
 }
 
-.difference-row.odd {
-    background-color: #f2ede9;
+.difference-cell:nth-child(even) {
+    background-color: #F3F3F3;
 }
 
-/* Cột đầu tiên (tên tính năng) căn trái */
-.difference-row .feature {
-    text-align: left;
-    padding-left: 10px;
-    font-weight: 500;
+.icon-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.icon-img:hover {
+    opacity: 1.3;
+    transition: transform .2s;
+    transform: scale(1.1);
 }

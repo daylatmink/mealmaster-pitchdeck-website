@@ -2,41 +2,22 @@ import React from "react";
 import "./MarketStatsSection.css";
 
 const MarketStatsSection = () => {
-    const stats = [
-        {
-            icon: "💚",
-            percent: "60%",
-            text: "Người trẻ tại Việt Nam đang theo đuổi lối sống lành mạnh (Cimigo, 2022)"
-        },
-        {
-            icon: "⏰",
-            percent: "45%",
-            text: "Thừa nhận không đủ thời gian chuẩn bị bữa ăn lành mạnh (Vero, 2022)"
-        },
-        {
-            icon: "💸",
-            percent: "75%",
-            text: "Sẵn sàng trả phí cho giải pháp ăn uống thông minh (VitaGrid)"
-        },
-    ];
-
     return (
-        <section className="market-section">
-            <h2 className="market-title">
-                Người trẻ đang ưu tiên sống khỏe – nhưng không đủ thời gian để ăn uống đúng cách
-            </h2>
-            <div className="market-grid">
-                {stats.map((s, idx) => (
-                    <div className="market-card" key={idx}>
-                        <div className="market-icon">{s.icon}</div>
-                        <div className="market-percent">{s.percent}</div>
-                        <p className="market-text">{s.text}</p>
-                    </div>
-                ))}
+        <section className="market-stats-full">
+            <div className="market-stats-inner">
+                <div className="stats-left">
+                    <h3 className="stats-title">NGƯỜI TRẺ ĐANG ƯU TIÊN SỐNG KHỎE</h3>
+                    <img src="/assets/7.png" alt="Người lo lắng" className="stats-icon" />
+                    <h3 className="stats-subtitle">NHƯNG KHÔNG ĐỦ THỜI GIAN ĐỂ ĂN UỐNG ĐÚNG CÁCH</h3>
+                </div>
+                <div className="stats-right">
+                    <img
+                        src="/assets/infographic2.png"
+                        alt="Biểu đồ hành vi"
+                        className="stats-chart"
+                    />
+                </div>
             </div>
-            <p className="market-callout">
-                “MealMaster không tạo ra nhu cầu mới – chúng tôi chỉ giải quyết vấn đề mà người trẻ đang đối mặt mỗi ngày.”
-            </p>
         </section>
     );
 };

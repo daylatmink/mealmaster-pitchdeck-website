@@ -13,7 +13,7 @@ const Header = () => {
                             <img src={SearchIcon} id="SearchIcon" />
                         </div>
                         <div className="logo">
-                            <img src="/assets/logo.png" class="logo" alt="MealMaster" />
+                            <img src="/assets/logo2.png" class="logo" alt="MealMaster" />
                         </div>
                         
                         <ul className="nav-links">
