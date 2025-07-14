@@ -2,7 +2,7 @@
 
 import React from "react";
 import "./HeroSection.css";
-import IconButton from "../../ui/IconButton/IconButton"
+import IconButton from "../../IconButton/IconButton"
 
 import meal from "./meal.jpg"
 import exHeroWave from "./exHeroWave.svg"
