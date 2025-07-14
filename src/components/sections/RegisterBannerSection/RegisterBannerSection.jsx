@@ -4,7 +4,7 @@ import "./RegisterBannerSection.css";
 const RegisterBannerSection = () => {
     return (
         <section className="register-banner">
-            <img src="/assets/8.png" alt="Pan Left" className="pan-left" />
+            <img src="/assets/13.png" alt="Pan Left" className="pan-left" />
             <div className="register-content">
                 <p className="register-text">Đăng ký để nhận ngay nhiều ưu đãi giới hạn!</p>
                 <button className="register-button">Đăng ký ngay!</button>
