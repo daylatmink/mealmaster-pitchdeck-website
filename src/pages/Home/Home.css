@@ -21,6 +21,8 @@ main > * > * {
     */
     /*điều chỉnh chiều rộng nội dung ở đây*/
     max-width: 1600px;
+
+    margin: 0 auto;
 }
 
 /* Loại bỏ gap giữa phần tử cuối và gần cuối */
