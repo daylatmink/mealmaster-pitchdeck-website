@@ -33,24 +33,28 @@ const FAQSection = () => {
 
     return (
         <section className="faq-section">
-            <h2 className="faq-title-box">
-                <span className="faq-title-text">CÂU HỎI THƯỜNG GẶP (FAQ)</span>
-            </h2>
-            <div className="faq-list">
-                {faqs.map((faq, idx) => (
-                    <div
-                        className={`faq-item ${activeIndex === idx ? "active" : ""}`}
-                        key={idx}
-                    >
-                        <button className="faq-question" onClick={() => toggleFAQ(idx)}>
-                            {faq.question}
-                            <span className="faq-toggle">{activeIndex === idx ? "-" : "+"}</span>
-                        </button>
-                        {activeIndex === idx && (
-                            <div className="faq-answer">{faq.answer}</div>
-                        )}
-                    </div>
-                ))}
+            <div className="faq-container">
+
+                <h2 className="faq-title-box">
+                    <span className="faq-title-text">CÂU HỎI THƯỜNG GẶP (FAQ)</span>
+                </h2>
+                <div className="faq-list">
+                    {faqs.map((faq, idx) => (
+                        <div
+                            className={`faq-item ${activeIndex === idx ? "active" : ""}`}
+                            key={idx}
+                        >
+                            <button className="faq-question" onClick={() => toggleFAQ(idx)}>
+                                {faq.question}
+                                <span className="faq-toggle">{activeIndex === idx ? "-" : "+"}</span>
+                            </button>
+                            {activeIndex === idx && (
+                                <div className="faq-answer">{faq.answer}</div>
+                            )}
+                        </div>
+                    ))}
+                </div>
+                
             </div>
         </section>
     );

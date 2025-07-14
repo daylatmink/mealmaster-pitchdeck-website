@@ -1,5 +1,8 @@
+
 .header {
     background-color: #214ECF;
+}
+.header-container {
     padding: 0 2%;
     height: 145px;
     display: flex;

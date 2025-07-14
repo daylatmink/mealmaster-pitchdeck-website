@@ -1,15 +1,21 @@
 main {
-    height: 100vh;
-}
-
-sections {
     display: flex;
     flex-direction: column;
-    padding: 1%;
-    gap: 5vh;
+    width: 100%;
+
+    gap: 20px;
 }
-.page-container {
-    max-width: 1440px;
+
+main > * > * {
+    /*
+
+    */
     margin: 0 auto;
-    padding: 0 20px;
+    /*điều chỉnh chiều rộng nội dung ở đây*/
+    max-width: 1600px;
+}
+
+/* Loại bỏ gap giữa phần tử cuối và gần cuối */
+main > *:last-child {
+    margin-top: -20px;
 }
