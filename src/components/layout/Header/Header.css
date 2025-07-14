@@ -24,7 +24,7 @@
 }
 .nav-search img {
     width: 50%;
-    height: 50%; 
+    height: 50%;
 }
 
 .logo {
@@ -98,3 +98,110 @@
     color: #fff;
     border: 2px solid #F2674A;
 }
+/* =================== Responsive =================== */
+
+/* Tablet (≤ 992px) */
+@media (max-width: 992px) {
+    .header {
+        height: auto;
+        flex-direction: column;
+        padding: 1rem 5%;
+    }
+
+    .nav-group {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        font-size: 1rem;
+        width: auto;
+    }
+
+    .logo img {
+        height: 55px;
+    }
+
+    .nav-auth {
+        margin-top: 1rem;
+    }
+}
+
+/* Mobile (≤ 576px) */
+@media (max-width: 576px) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+        height: auto;
+    }
+
+    .nav-group {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    .nav-search {
+        height: 40px;
+        width: 40px;
+        flex-shrink: 0;
+    }
+
+    .logo img {
+        height: 40px;
+        max-width: 80px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        overflow-x: auto;
+        white-space: nowrap;
+        font-size: 0.6rem;
+        padding: 0.5rem;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.9);
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+
+    .nav-links::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-auth {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        justify-content: right;
+        width: 100%;
+        margin-top: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .nav-btn {
+        font-size: 0.85rem;
+        padding: 0.4rem 1rem;
+        width: auto;
+        height: auto;              /* ❌ bỏ height cố định */
+        line-height: 1.2;          /* thêm để tránh bị căng */
+        border-radius: 16px;       /* điều chỉnh bo tròn nếu muốn */
+        min-width: 50px;           /* giữ nút không quá hẹp */
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+
