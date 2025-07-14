@@ -8,9 +8,17 @@ main {
 
 main > * > * {
     /*
+        chú ý nếu thêm `{name}Section` thì code của `{name}Section.jsx` như sau:
 
+        return (
+            <section className="{name}-section">
+                <div className="{name}-container">
+                    ...
+                </div>
+            </section>
+        );
+    
     */
-    margin: 0 auto;
     /*điều chỉnh chiều rộng nội dung ở đây*/
     max-width: 1600px;
 }
