@@ -1,5 +1,5 @@
-import buttonSvg from "../../assets/Subtract.svg";
-import './Button.css'
+import Subtract from "./Subtract.svg";
+import "./IconButton.css";
 
 export default function IconButton({ href, label, className }) {
     return (

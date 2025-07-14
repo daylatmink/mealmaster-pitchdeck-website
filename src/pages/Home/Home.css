@@ -1,0 +1,10 @@
+main {
+    height: 100vh;
+}
+
+sections {
+    display: flex; 
+    flex-direction: column; 
+    padding: 1%; 
+    gap: 5vh;
+}

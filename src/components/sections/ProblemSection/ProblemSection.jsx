@@ -1,6 +1,6 @@
 import React from "react";
 import "./ProblemSection.css";
-import IconButton from "../../buttons/IconButton";
+import IconButton from "../../IconButton/IconButton";
 
 import woman from "./woman.png";
 import question from "./question.png";
