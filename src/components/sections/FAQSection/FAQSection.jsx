@@ -33,7 +33,9 @@ const FAQSection = () => {
 
     return (
         <section className="faq-section">
-            <h2 className="faq-title">Câu hỏi thường gặp (FAQ)</h2>
+            <h2 className="faq-title-box">
+                <span className="faq-title-text">CÂU HỎI THƯỜNG GẶP (FAQ)</span>
+            </h2>
             <div className="faq-list">
                 {faqs.map((faq, idx) => (
                     <div

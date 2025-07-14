@@ -1,0 +1,61 @@
+.register-banner {
+    background-color: #F2674A;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.register-content {
+    z-index: 2;
+    padding: 20px;
+    white-space: nowrap; /* giữ text trên một dòng */
+}
+
+.register-text {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-family: 'Google Sans', sans-serif;
+}
+
+.register-button {
+    background-color: #214ECF;
+    color: white;
+    border: none;
+    padding: 40px 80px;
+    border-radius: 50px;
+    font-size: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #003F99;
+}
+
+.pan-left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-90%);
+    z-index: 1;
+}
+.pot-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-110%);
+    z-index: 1;
+}
+
+
+.pan-left {
+    left: 20px;
+}
+
+.pot-right {
+    right: 20px;
+}

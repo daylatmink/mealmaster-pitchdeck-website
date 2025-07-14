@@ -2,14 +2,16 @@
     background-color: #0047FF;
     padding: 60px 20px;
     text-align: center;
+    font-family: 'Google Sans', sans-serif;
 }
 
 .difference-title {
     font-size: 38px;
-    font-weight: 800;
+    /*font-weight: 800;*/
     line-height: 1.4;
     margin-bottom: 40px;
     color: white;
+
 }
 
 .difference-table {
@@ -37,7 +39,7 @@
     justify-content: center;
     min-height: 64px;
     font-size: 16px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     white-space: nowrap;
 }
 

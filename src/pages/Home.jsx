@@ -2,11 +2,11 @@ import React from "react";
 
 import { Header, Footer } from "../components/layout";
 import {
-    HeroSection, 
-    ProblemSection, 
+    HeroSection,
+    ProblemSection,
     SolutionSection,
 
-    DifferenceSection, 
+    DifferenceSection,
     MarketStatsSection,
     StatementSection,
 
@@ -14,6 +14,8 @@ import {
     JoinSection,
     RecruitSection,
 } from "../components";
+import BannerSection from "../components/sections/BannerSection";
+import RegisterBannerSection from "../components/sections/RegisterBannerSection";
 
 
 const Home = () => (
@@ -28,8 +30,10 @@ const Home = () => (
         <StatementSection />
 
         <FAQSection />
+        <BannerSection />
         <JoinSection />
         <RecruitSection />
+        <RegisterBannerSection />
         <Footer />
     </main>
 );

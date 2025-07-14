@@ -99,7 +99,8 @@
     display: flex;
     align-items: center;
     opacity: 0.9; /* Tạo hiệu ứng mờ */
-    transition: opacity 0.3s ease; /* Thêm hiệu ứng mờ khi hover */
+    transition: opacity 0.3s ease;
+    justify-content: center; /* canh giữa ngang */
 }
 .nav-btn:hover {
     opacity: 1;

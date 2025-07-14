@@ -41,10 +41,16 @@ const Footer = () => {
 
                 <div className="footer-column">
                     <h4>Kết nối</h4>
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">TikTok</a></li>
+                    <ul className="footer-social">
+                        <li>
+                            <a href="#"><i className="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i className="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i className="fab fa-tiktok"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
