@@ -59,7 +59,10 @@
     font-weight: 500;
     margin: 9px;
 }
-
+.nav-links a:hover {
+    text-decoration: underline;
+    opacity: 1.4;
+}
 
 
 .nav-auth {

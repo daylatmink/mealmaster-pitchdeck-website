@@ -7,6 +7,16 @@
     padding-top: 10px;
     font-family: 'Google Sans', sans-serif;
 }
+.problem-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    background: #214ECF;
+    padding: 3rem 1rem;
+    font-family: 'Google Sans', sans-serif;
+    margin: 0 auto;
+}
 
 
 
@@ -16,30 +26,40 @@
 .problem-left {
     display: flex;
     flex-direction: column;
-    align-items: center;     /* Căn giữa nút dưới ảnh */
-    flex: 0 0 40%;           /* Hoặc max-width */
-    max-width: 40%;
+    align-items: stretch;
     justify-content: space-between;
+    flex: 1 1 300px;
+    padding: 1rem;
 }
+
 .problem-left img {
-    width: 250%;  /* Cho to hơn box cha */
+    margin-top: 15%;
+    width: 100%;
+    max-width: 100%;
     height: auto;
-    display: block;
-    margin: -90px 0px 0px 150px;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 16px;
+    transform: scale(1.7);
 }
+
+
 
 .problem-buttons {
     display: flex;
-    gap: 30px;
-    height: 150px;
-    margin: -120px 0px 60px 150px;
-    bottom: 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: center;
+    width: 100%;
 }
 
 .problem-buttons .icon-button {
-    padding: 40px 20px;
+    padding: 1.2rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    font-weight: bold;
 }
+
 
 .problem-buttons .label {
     font-size: 3rem;
@@ -73,33 +93,41 @@
 
 
 .problem-right {
-    flex: 1;
-    max-width: 50%;
-    justify-content: flex-start;
+    flex: 1 1 500px;
+    min-width: 280px;
+    color: white;
 }
+
 
 .problem-title {
-    font-size: 4rem;
+    font-size: clamp(1.5rem, 3.5vw, 2.5rem);
     font-weight: bold;
-    margin-bottom: 24px;
-    color: #fff; /* tuỳ background */
+    margin-bottom: 1.5rem;
 }
+
 
 .problem-icons {
-    display: flex;
-    justify-content: center;   /* Căn giữa hàng ngang */
-    align-items: flex-start;   /* Cho caption thẳng đều */
-    gap: 10%;
-    margin-top: 50px;
-    margin-left: -50px;               /* Khoảng cách giữa item */
-    flex-wrap: wrap;           /* Cho responsive khi hẹp */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cột đều nhau */
+    gap: 1.5rem;
+    margin-top: 2rem;
 }
 
+
+.problem-icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 160px;
+    text-align: center;
+}
+
+
 .problem-icon-box {
-    background: #F2674A;  /* Cam */
-    border-radius: 50px;
-    width: 180px;
-    height: 180px;
+    background: #F2674A;
+    border-radius: 20px;
+    width: 130%;
+    aspect-ratio: 1 / 1; /* giữ box vuông */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,27 +135,24 @@
 }
 
 .problem-icon-box img {
-    width: 100%;        /* Bao phủ chiều ngang box */
-    height: 100%;       /* Bao phủ chiều dọc box */
-    object-fit: cover;  /* Bảo toàn tỉ lệ */
-    transform: scale(2.3);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(2.0);
 }
-
 
 .problem-caption {
-    margin-top: 8px;
-    color: #fff;          /* text trắng */
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 1.2;
-    width: 180px;
+    margin-top: 0.5rem;
+    font-size: clamp(0.9rem, 1.3vw, 1.1rem);
 }
+
 .problem-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 120px;
     text-align: center;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
 }
 
 .problem-item img {
@@ -142,10 +167,9 @@
 }
 
 .problem-cta {
-    font-size: 3.2rem;
-    font-weight: 500;
-    text-align: left;
+    font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: bold;
-    margin-top: -5px;
+    margin-top: 2rem;
     color: #F5EEE6;
+    text-align: center;
 }

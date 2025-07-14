@@ -137,19 +137,23 @@
 }
 
 .hero-buttons .icon-button {
-    padding: 2vh 4vh;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    white-space: nowrap;
 }
 
+
 .hero-buttons .label {
-    font-size: 6vh;
-    padding: 0 12vh 0 2vh;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    padding: 0 2rem;
 }
+
 
 .icon-button {
     background: #214ECF;
     color: white;
     font-weight: bold;
-    border-radius: 2vh;    
+    border-radius: 2vh;
 }
 
 .icon-button:hover {

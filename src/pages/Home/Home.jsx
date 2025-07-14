@@ -21,8 +21,9 @@ import {
 const Home = () => (
     <main>
         <Header />
-
+        <div className="page-container">
         <sections>
+
             <HeroSection />
             <ProblemSection />
             <SolutionSection />
@@ -37,7 +38,7 @@ const Home = () => (
             <RecruitSection />
             <RegisterBannerSection />
         </sections>
-
+        </div>
         <Footer />
     </main>
 );

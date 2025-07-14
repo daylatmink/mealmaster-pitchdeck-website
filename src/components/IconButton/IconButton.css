@@ -4,7 +4,6 @@
     text-decoration: none;
     background: #214ECF;
     border-radius: 50px;
-    display: flex;
     justify-content: center; /* canh giữa ngang */
     align-items: center;
 }
