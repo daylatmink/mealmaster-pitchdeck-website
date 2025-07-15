@@ -7,5 +7,12 @@ export default defineConfig({
     server: {
         host: true,
         allowedHosts: ['.ngrok-free.app'],
+        proxy: {
+            '/auth': {
+                target: 'http://localhost:3000',
+                changeOrigin: true,
+                secure: false,
+            },
+        },
     },
 });
