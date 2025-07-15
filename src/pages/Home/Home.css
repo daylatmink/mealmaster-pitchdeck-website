@@ -20,7 +20,7 @@ main > * > * {
     
     */
     /*điều chỉnh chiều rộng nội dung ở đây*/
-    max-width: 1600px;
+    max-width: min(80vw, 1600px);
 
     margin: 0 auto;
 }
