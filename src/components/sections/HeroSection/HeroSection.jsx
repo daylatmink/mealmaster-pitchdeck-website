@@ -2,16 +2,14 @@
 
 import React from "react";
 import "./HeroSection.css";
-import IconButton from "../../IconButton/IconButton"
 
 import meal from "./meal.jpg"
 import exHeroWave from "./exHeroWave.svg"
-import HeroWave from "./HeroWave.svg"
 
 const HeroSection = () => {
     return (
-        <>
-            <section className="hero-section">
+        <section className="hero-section">
+            <div className="hero-container">
                 {/* Background image */}
                 <div className="hero-bg">
                     <img src={meal} alt="Kitchen Background" />
@@ -45,18 +43,9 @@ const HeroSection = () => {
                     </p>
 
                 </div>
-            </section>
 
-            <nav className="hero-bottom-nav">
-                <p className="hero-subtitle">
-                    MealMaster giúp bạn lên thực đơn theo mục tiêu sức khỏe, chia khẩu phần đúng lượng và giao nguyên liệu tận tay – dễ dàng, lành mạnh, không lãng phí.
-                </p>
-                <div className="hero-buttons">
-                    <IconButton href="#faq" label="FAQ"/>
-                    <IconButton href="#explore" label="Explore" />
-                </div>
-            </nav>
-        </>
+            </div>
+        </section>
     );
 };
 

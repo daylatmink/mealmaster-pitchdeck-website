@@ -27,21 +27,25 @@ const DifferenceSection = () => {
 
     return (
         <section className="difference-section">
-            <h2 className="difference-title">
-                KHÔNG GIỐNG APP ĐI CHỢ<br />
-                KHÔNG GIỐNG APP ĂN KIÊNG
-            </h2>
-            <div className="difference-table">
-                {Object.entries(data).map(([colTitle, colData], index) => (
-                    <div className="difference-column" key={index}>
-                        <div className="difference-header">{colTitle}</div>
-                        {colData.map((item, i) => (
-                            <div className="difference-cell" key={i}>
-                                {typeof item === "string" ? item : getIcon(item)}
-                            </div>
-                        ))}
-                    </div>
-                ))}
+            <div className="difference-container">
+
+                <h2 className="difference-title">
+                    KHÔNG GIỐNG APP ĐI CHỢ<br />
+                    KHÔNG GIỐNG APP ĂN KIÊNG
+                </h2>
+                <div className="difference-table">
+                    {Object.entries(data).map(([colTitle, colData], index) => (
+                        <div className="difference-column" key={index}>
+                            <div className="difference-header">{colTitle}</div>
+                            {colData.map((item, i) => (
+                                <div className="difference-cell" key={i}>
+                                    {typeof item === "string" ? item : getIcon(item)}
+                                </div>
+                            ))}
+                        </div>
+                    ))}
+                </div>
+                
             </div>
         </section>
     );

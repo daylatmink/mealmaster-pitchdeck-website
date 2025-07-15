@@ -1,0 +1,54 @@
+
+
+/* =============== CTA =============== */
+.cta-section {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.cta-container {
+    background: #fff;
+    flex-wrap:wrap;
+    display: flex;
+    justify-content: space-between;  /* subtitle bên trái - nút bên phải */
+}
+
+.cta-subtitle {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.4;
+    width: 800px;
+    margin: 0;
+}
+
+.cta-buttons {
+    gap: 20px;
+    display: flex;
+}
+
+.cta-buttons .label {
+    font-size: 2.7rem;
+}
+
+
+.cta-buttons .icon-button {
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0 170px 0 40px;
+
+    white-space: nowrap;
+    
+    background: #214ECF;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.cta-buttons .icon-button:hover {
+    background: #083db2;      /* hover darker */
+    transform: scale(1.05);
+}
+

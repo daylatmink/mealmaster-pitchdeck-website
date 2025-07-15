@@ -4,6 +4,7 @@ import "./Home.css";
 import { Header, Footer } from "../../components";
 import {
     HeroSection,
+    CTASection,
     ProblemSection,
     SolutionSection,
     DifferenceSection,
@@ -17,28 +18,23 @@ import {
     RegisterBannerSection
 } from "../../components";
 
-
 const Home = () => (
     <main>
         <Header />
-        <div className="page-container">
-        <sections>
 
-            <HeroSection />
-            <ProblemSection />
-            <SolutionSection />
+        <HeroSection />
+        <CTASection />
+        <ProblemSection />
+        <SolutionSection />
+        <DifferenceSection />
+        <MarketStatsSection />
+        <StatementSection />
+        <FAQSection />
+        <BannerSection />
+        <JoinSection />
+        <RecruitSection />
+        <RegisterBannerSection />
 
-            <DifferenceSection />
-            <MarketStatsSection />
-            <StatementSection />
-
-            <FAQSection />
-            <BannerSection />
-            <JoinSection />
-            <RecruitSection />
-            <RegisterBannerSection />
-        </sections>
-        </div>
         <Footer />
     </main>
 );

@@ -3,8 +3,8 @@ import "./MarketStatsSection.css";
 
 const MarketStatsSection = () => {
     return (
-        <section className="market-stats-full">
-            <div className="market-stats-inner">
+        <section className="market-stats-section">
+            <div className="market-stats-container">
                 <div className="stats-left">
                     <h3 className="stats-title">NGƯỜI TRẺ ĐANG ƯU TIÊN SỐNG KHỎE</h3>
                     <img src="/assets/7.png" alt="Người lo lắng" className="stats-icon" />

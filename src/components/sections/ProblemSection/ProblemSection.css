@@ -1,4 +1,4 @@
-.problem-section {
+.problem-container {
     display: flex;
     justify-content: space-between; /* Sát lề trái */
     gap: 3rem;
@@ -6,8 +6,6 @@
     background: #214ECF;
     padding-top: 10px;
     font-family: 'Google Sans', sans-serif;
-}
-.problem-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
