@@ -162,8 +162,13 @@
     text-align: center;
     margin-top: -40px;
     margin-left: -65px;
+    animation: moveDown 1s ease-in-out infinite;
 }
-
+@keyframes moveDown {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+}
 .problem-cta {
     font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: bold;

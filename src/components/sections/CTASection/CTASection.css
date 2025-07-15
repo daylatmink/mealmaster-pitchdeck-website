@@ -8,7 +8,7 @@
 
 .cta-container {
     background: #fff;
-    flex-wrap:wrap;
+    flex-wrap:  wrap;
     display: flex;
     justify-content: space-between;  /* subtitle bên trái - nút bên phải */
 }
@@ -17,17 +17,22 @@
     font-size: 30px;
     font-weight: bold;
     line-height: 1.4;
-    width: 800px;
+    width: 40vw;
     margin: 0;
 }
 
 .cta-buttons {
     gap: 20px;
     display: flex;
+    white-space: nowrap;
+    max-width: 40vw;
+    align-items: center;
+    flex-direction: row;
 }
-
 .cta-buttons .label {
     font-size: 2.7rem;
+    display: flex;
+    padding: 10px;
 }
 
 
@@ -51,4 +56,31 @@
     background: #083db2;      /* hover darker */
     transform: scale(1.05);
 }
+@media (max-width: 768px) {
+    .cta-section {
+        display: flex;
+        justify-content: center; /* căn giữa ngang */
+        align-items: center;
+    }
+    .cta-container{
+        flex-direction: column;
+    }
+    .cta-subtitle {
+        font-size: 20px;
+        width: 90vw;
+        text-align: center;
+    }
 
+    .cta-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        width: auto;
+        max-width: 300px;
+        gap: 12px;
+        justify-content: center;
+    }
+    .cta-buttons .label {
+        font-size: 24px;
+        text-justify: inter-word;
+    }
+}
