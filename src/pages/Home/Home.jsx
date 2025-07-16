@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 
-import { Header, Footer } from "../../components";
+import { Header, Footer } from "./shared";
 import {
     HeroSection,
     CTASection,
@@ -16,7 +16,7 @@ import {
     JoinSection,
     RecruitSection,
     RegisterBannerSection
-} from "../../components";
+} from "./sections";
 
 const Home = () => (
     <main>

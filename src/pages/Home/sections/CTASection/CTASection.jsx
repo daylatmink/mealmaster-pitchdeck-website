@@ -2,7 +2,7 @@
 
 import React from "react";
 import "./CTASection.css";
-import IconButton from "../../IconButton/IconButton"
+import { IconButton } from "../../shared";
 
 const CTASection = () => {
     return (

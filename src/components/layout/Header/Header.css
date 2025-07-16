@@ -1,50 +1,40 @@
+/* Header.css */
 
 .header {
     background-color: #214ECF;
 }
+
 .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 0 2%;
     height: 145px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
 }
 
-.nav-group {
-    display: flex;
+/* Desktop Layout: logo → links → search → auth */
+.header-left {
+    display: none;
     align-items: center;
-    width: 65%;
+    gap: 15px;
 }
 
-.nav-search {
+.header-logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60px;
-    width: 60px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 999px;
-}
-.nav-search img {
-    width: 50%;
-    height: 50%;
+    order: 1;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
-.logo img {
+.header-logo img {
     height: 75px;
 }
 
-.nav-links {
+.header-links {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
     list-style: none;
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(15px);
@@ -54,27 +44,72 @@
     padding: 5px 30px;
     width: 480px;
     font-size: 20px;
+    margin: 0;
+    order: 2;
 }
 
-.nav-links a {
+.header-links a {
     color: #000;
     text-decoration: none;
     font-weight: 500;
     margin: 9px;
+    transition: all 0.3s ease;
 }
-.nav-links a:hover {
+
+.header-links a:hover {
     text-decoration: underline;
     opacity: 1.4;
 }
 
-
-.nav-auth {
+.header-search-desktop {
     display: flex;
     align-items: center;
-    justify-content: right;
-    gap: 3%;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 999px;
+    transition: all 0.3s ease;
+    order: 3;
 }
-.nav-btn {
+
+.header-search-desktop img {
+    width: 50%;
+    height: 50%;
+}
+
+.header-search-desktop:hover {
+    transform: scale(1.05);
+}
+
+.header-search-mobile {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 999px;
+    transition: all 0.3s ease;
+}
+
+.header-search-mobile img {
+    width: 50%;
+    height: 50%;
+}
+
+.header-search-mobile:hover {
+    transform: scale(1.05);
+}
+
+.header-auth {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    order: 4;
+}
+
+.header-btn {
     background: #ffffff;
     color: #000;
     border: none;
@@ -87,124 +122,296 @@
     width: 190px;
     display: flex;
     align-items: center;
-    opacity: 0.9; /* Tạo hiệu ứng mờ */
-    transition: opacity 0.3s ease;
-    justify-content: center; /* canh giữa ngang */
+    justify-content: center;
+    opacity: 0.9;
+    transition: all 0.3s ease;
 }
-.nav-btn:hover {
+
+.header-btn:hover {
     opacity: 1;
     transform: scale(1.05);
-    transition: all 0.2s ease;
 }
-.nav-login {
+
+.header-login {
     background: #F2674A;
     color: #fff;
     border: 2px solid #F2674A;
 }
-/* =================== Responsive =================== */
 
-/* Tablet (≤ 992px) */
-@media (max-width: 992px) {
-    .header {
-        height: auto;
-        flex-direction: column;
-        padding: 1rem 5%;
+/* Mobile Menu Styles */
+.header-mobile-menu {
+    position: relative;
+    display: none;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background: #214ECF;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 20px;
+    min-width: 200px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.dropdown-menu.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu a {
+    display: block;
+    color: #214ECF;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(33, 78, 207, 0.1);
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu a:hover {
+    color: #F2674A;
+    padding-left: 10px;
+}
+
+/* Zoom >= 150% Styles */
+.header.zoomed .header-container {
+    height: 100px;
+    padding: 0 4%;
+    justify-content: space-between;
+}
+
+/* Show mobile layout when zoomed */
+.header.zoomed .header-left {
+    display: flex;
+    order: 1;
+}
+
+.header.zoomed .header-mobile-menu {
+    display: block;
+}
+
+.header.zoomed .header-search-mobile {
+    display: flex;
+}
+
+/* Hide desktop elements when zoomed */
+.header.zoomed .header-links {
+    display: none;
+}
+
+.header.zoomed .header-search-desktop {
+    display: none;
+}
+
+/* Logo in center when zoomed */
+.header.zoomed .header-logo {
+    order: 2;
+    flex: 1;
+    justify-content: center;
+}
+
+.header.zoomed .header-logo img {
+    height: 50px;
+}
+
+/* Auth buttons on right when zoomed */
+.header.zoomed .header-auth {
+    order: 3;
+    gap: 10px;
+}
+
+.header.zoomed .header-btn {
+    font-size: 16px;
+    width: 80px;
+    height: 45px;
+    padding: 8px 12px;
+}
+
+.header.zoomed .header-search-mobile {
+    width: 45px;
+    height: 45px;
+}
+
+.header.zoomed .hamburger {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .header-container {
+        padding: 0 3%;
     }
-
-    .nav-group {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+    
+    .header-links {
+        width: 400px;
+        gap: 20px;
+        font-size: 18px;
     }
-
-    .nav-links {
-        flex-wrap: wrap;
-        font-size: 1rem;
-        width: auto;
+    
+    .header-btn {
+        font-size: 28px;
+        width: 160px;
+        height: 70px;
     }
-
-    .logo img {
-        height: 55px;
-    }
-
-    .nav-auth {
-        margin-top: 1rem;
+    
+    .header-logo img {
+        height: 65px;
     }
 }
 
-/* Mobile (≤ 576px) */
-@media (max-width: 576px) {
-    .header {
-        flex-wrap: wrap;
+/* Mobile Styles: links + search → logo → auth */
+@media (max-width: 768px) {
+    .header-container {
+        height: 100px;
+        padding: 0 4%;
         justify-content: space-between;
-        padding: 0.5rem 1rem;
-        height: auto;
     }
-
-    .nav-group {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        flex-wrap: nowrap;
-    }
-
-    .nav-search {
-        height: 40px;
-        width: 40px;
-        flex-shrink: 0;
-    }
-
-    .logo img {
-        height: 40px;
-        max-width: 80px;
-    }
-
-    .nav-links {
+    
+    /* Show mobile left section */
+    .header-left {
         display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        overflow-x: auto;
-        white-space: nowrap;
-        font-size: 0.6rem;
-        padding: 0.5rem;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.9);
-        scrollbar-width: none;
-        -ms-overflow-style: none;
-        max-width: 100%;
-        width: auto;
-        height: auto;
+        order: 1;
     }
-
-    .nav-links::-webkit-scrollbar {
+    
+    .header-mobile-menu {
+        display: block;
+    }
+    
+    .header-search-mobile {
+        display: flex;
+    }
+    
+    /* Hide desktop elements */
+    .header-links {
         display: none;
     }
-
-    .nav-auth {
-        display: flex;
-        flex-direction: row;
-        gap: 0.5rem;
-        justify-content: right;
-        width: 100%;
-        margin-top: 0.5rem;
-        flex-wrap: wrap;
+    
+    .header-search-desktop {
+        display: none;
     }
-
-    .nav-btn {
-        font-size: 0.85rem;
-        padding: 0.4rem 1rem;
-        width: auto;
-        height: auto;              /* ❌ bỏ height cố định */
-        line-height: 1.2;          /* thêm để tránh bị căng */
-        border-radius: 16px;       /* điều chỉnh bo tròn nếu muốn */
-        min-width: 50px;           /* giữ nút không quá hẹp */
-        font-weight: bold;
-        display: flex;
-        align-items: center;
+    
+    /* Logo in center */
+    .header-logo {
+        order: 2;
+        flex: 1;
         justify-content: center;
     }
-
+    
+    .header-logo img {
+        height: 50px;
+    }
+    
+    /* Auth buttons on right */
+    .header-auth {
+        order: 3;
+        gap: 10px;
+    }
+    
+    .header-btn {
+        font-size: 16px;
+        width: 80px;
+        height: 45px;
+        padding: 8px 12px;
+    }
+    
+    .header-search-mobile {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .hamburger {
+        width: 45px;
+        height: 45px;
+        padding: 10px;
+    }
 }
 
-
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+    .header-container {
+        height: 80px;
+        padding: 0 3%;
+    }
+    
+    .header-logo img {
+        height: 40px;
+    }
+    
+    .header-btn {
+        font-size: 14px;
+        width: 70px;
+        height: 40px;
+        padding: 6px 8px;
+    }
+    
+    .header-search-mobile {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .hamburger {
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+    }
+    
+    .dropdown-menu {
+        min-width: 180px;
+        padding: 15px;
+    }
+    
+    .dropdown-menu a {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+}
