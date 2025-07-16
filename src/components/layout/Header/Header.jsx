@@ -1,10 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Header.css";
 
 import SearchIcon from './searchicon.svg';
 import {useNavigate} from "react-router-dom";
 
 const Header = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
     const navigate = useNavigate();
 
     const handleLoginClick = () => {
@@ -13,6 +14,11 @@ const Header = () => {
     const handleSignupClick = () => {
         navigate("/registerUser");
     };
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
     return (
         <header className="header">
             <div className="header-container">
@@ -24,9 +30,12 @@ const Header = () => {
                     <div className="logo">
                         <img src="/assets/logo2.png" alt="MealMaster" />
                     </div>
-                    
-                    <ul className="nav-links">
-                        <li><a href="#">About</a></li>
+                    {/* Hamburger icon */}
+                    <div className="hamburger" onClick={toggleMenu}>
+                        ☰
+                    </div>
+                    <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
+                    <li><a href="#">About</a></li>
                         <li><a href="#">Pricing</a></li>
                         <li><a href="#">Service</a></li>
                         <li><a href="#">Community</a></li>
