@@ -1,10 +1,9 @@
 .problem-container {
     display: flex;
-    justify-content: space-between; /* Sát lề trái */
-    gap: 3rem;
+
     flex-wrap: wrap;
     background: #214ECF;
-    padding-top: 10px;
+
     font-family: 'Google Sans', sans-serif;
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +11,6 @@
     gap: 2rem;
     background: #214ECF;
     padding: 3rem 1rem;
-    font-family: 'Google Sans', sans-serif;
     margin: 0 auto;
 }
 
@@ -31,13 +29,13 @@
 }
 
 .problem-left img {
-    margin-top: 15%;
     width: 100%;
     max-width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 16px;
     transform: scale(1.7);
+    margin: 0 auto;
 }
 
 
@@ -46,9 +44,9 @@
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-    margin-top: 2rem;
     justify-content: center;
     width: 100%;
+    margin: 0 auto;
 }
 
 .problem-buttons .icon-button {
@@ -56,6 +54,7 @@
     font-size: 1.2rem;
     border-radius: 50px;
     font-weight: bold;
+
 }
 
 
