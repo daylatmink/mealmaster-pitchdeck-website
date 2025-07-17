@@ -17,9 +17,19 @@
 .header-logo {
     order: 1;
     width: auto;
+    margin-left: -10px;
+    margin-right: -30px;
 }
-.header-logo img {
-    height: 60px;
+.header-logo a {
+    display: flex;
+    align-items: center;
+}
+.header-logo :nth-child(1) {
+    height: 100px;
+}
+.header-logo :nth-child(2) {
+    height: 150px;
+    margin-left: -50px;
 }
 
 /* Nav */
@@ -243,9 +253,6 @@
     display: flex;
     justify-content: center;
     width: stretch;
-}
-.header.zoomed .header-logo img {
-    height: 60px;
 }
 
 /* Auth buttons on right when zoomed */

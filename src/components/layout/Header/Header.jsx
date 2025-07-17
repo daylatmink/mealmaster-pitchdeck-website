@@ -111,7 +111,8 @@ const Header = () => {
                 {/* Logo */}
                 <div className="header-logo">
                     <a href="">
-                        <img src="/assets/logo2.png" alt="MealMaster" />
+                        <img src="/assets/logo.png" alt="MealMaster" />
+                        <img src="/assets/tittle.png" alt="MealMaster" />
                     </a>
                 </div>
 
