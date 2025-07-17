@@ -80,42 +80,41 @@
     }
 }
 
+@media (max-width: 768px) and (min-width: 476px) {
+  .cta-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+  }
 
-/* =============== Giai đoạn 3: 576px → 768px =============== */
+  .cta-subtitle {
+    font-size: 18px;
+    max-width: 90vw;
+    text-align: center;
+  }
 
-@media (max-width: 768px) and (min-width: 576px) {
-    .cta-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-        text-align: center;
-    }
+  .cta-buttons {
+    width: 100%; /* 👈 Đảm bảo chiếm hết chiều ngang */
+    margin-top: -30px;
+    
+    display: flex;
+    gap: 1vw;
+    padding: 0 16px; /* 👈 Tạo khoảng cách với viền ngoài */
+  }
 
-    .cta-subtitle {
-        font-size: 18px;
-        max-width: 90vw;
-        text-align: center;
-    }
-
-    .cta-buttons {
-        margin-top: -30px;
-        flex-direction: row;
-        justify-content: center;
-        gap: 15px;
-        flex-wrap: wrap;
-    }
-
-    .cta-buttons .icon-button {
-        font-size: 1.8rem;
-        padding: 10px 40px;
-        min-width: 130px;
-    }
+  .cta-buttons .icon-button {
+    margin: 0 auto;
+    font-size: 1.8rem;
+    padding: 10px 40px;
+    width: 30vw;
+  }
 }
 
 
-/* =============== Giai đoạn 4: ≤575px =============== */
+/* =============== Giai đoạn 4: ≤475px =============== */
 
-@media (max-width: 575px) {
+@media (max-width: 475px) {
     .cta-container {
         flex-direction: column;
         align-items: center;
