@@ -1,13 +1,13 @@
 import React from "react";
 import "./ProblemSection.css";
-import IconButton from "../../IconButton/IconButton";
+import { IconButton } from "../../shared";
 
 import woman from "./woman.png";
 import question from "./question.png";
 import time from "./time.png";
 import tapping from "./tapping.png";
 import wait from "./wait.png";
-import arrow from "./arrow.png"
+import arrow from "./arrow.png";
 
 
 const ProblemSection = () => {
