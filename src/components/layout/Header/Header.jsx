@@ -52,7 +52,6 @@ const Header = () => {
             const screenWidth = window.screen.width;
             const windowWidth = window.innerWidth;
             const calculatedZoom = screenWidth / windowWidth;
-            
             if (calculatedZoom >= 1.5) {
                 setIsZoomed(true);
                 return;
@@ -84,16 +83,16 @@ const Header = () => {
         <header className={`header ${isZoomed ? 'zoomed' : ''}`}>
             <div className="header-container">
                 
-                {/* Mobile Menu & Search - Left Side (only visible on mobile) */}
-                <div className="header-left">
-                    <div className="header-mobile-menu">
+                {/* Nav-left (only visible on mobile) */}
+                <div className="nav-left">
+                    <div className="nav-mobile-menu">
                         <button 
                             className={`hamburger ${isMenuOpen ? 'active' : ''}`}
                             onClick={toggleMenu}
                         >
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                            <span />
+                            <span />
+                            <span />
                         </button>
                         
                         <div className={`dropdown-menu ${isMenuOpen ? 'open' : ''}`}>
@@ -104,27 +103,30 @@ const Header = () => {
                         </div>
                     </div>
                     
-                    <div className="header-search header-search-mobile">
+                    <div className="nav-search nav-search-mobile">
                         <img src={SearchIcon} alt="Search" />
                     </div>
                 </div>
 
                 {/* Logo */}
                 <div className="header-logo">
-                    <img src="/assets/logo2.png" alt="MealMaster" />
+                    <a href="">
+                        <img src="/assets/logo2.png" alt="MealMaster" />
+                    </a>
                 </div>
 
-                {/* Desktop Links (hidden on mobile) */}
-                <ul className="header-links">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Community</a></li>
-                </ul>
+                {/* Nav-right (hidden on mobile) */}
+                <div className="nav-right">
+                    <ul className="nav-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
 
-                {/* Desktop Search (hidden on mobile) */}
-                <div className="header-search header-search-desktop">
-                    <img src={SearchIcon} alt="Search" />
+                    <div className="nav-search nav-search-desktop">
+                        <img src={SearchIcon} alt="Search" />
+                    </div>
                 </div>
                 
                 {/* Auth Buttons */}
