@@ -1,6 +1,6 @@
 .icon-button {
     position: relative;
-    display: inline-block;
+    display: flex;
     text-decoration: none;
     background: #214ECF;
     border-radius: 50px;
