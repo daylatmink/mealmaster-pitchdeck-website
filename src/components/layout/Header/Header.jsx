@@ -1,15 +1,14 @@
 /* Header.jsx */
 
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Header.css";
 
 import SearchIcon from './searchicon.svg';
-import { useNavigate } from "react-router-dom";
 
 const Header = () => {
     const navigate = useNavigate();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isZoomed, setIsZoomed] = useState(false);
 
     const handleLoginClick = () => {
         navigate("/loginUser");
@@ -27,60 +26,8 @@ const Header = () => {
         setIsMenuOpen(false);
     };
 
-    // Detect zoom level
-    useEffect(() => {
-        const detectZoom = () => {
-            const zoomLevel = window.devicePixelRatio;
-            const viewport = window.visualViewport;
-            
-            // Method 1: Using devicePixelRatio (works for most cases)
-            if (zoomLevel >= 1.5) {
-                setIsZoomed(true);
-                return;
-            }
-            
-            // Method 2: Using visualViewport (more accurate for zoom detection)
-            if (viewport) {
-                const scale = viewport.scale;
-                if (scale >= 1.5) {
-                    setIsZoomed(true);
-                    return;
-                }
-            }
-            
-            // Method 3: Using screen width comparison
-            const screenWidth = window.screen.width;
-            const windowWidth = window.innerWidth;
-            const calculatedZoom = screenWidth / windowWidth;
-            if (calculatedZoom >= 1.5) {
-                setIsZoomed(true);
-                return;
-            }
-            
-            setIsZoomed(false);
-        };
-
-        // Initial check
-        detectZoom();
-
-        // Listen for resize events (zoom changes trigger resize)
-        window.addEventListener('resize', detectZoom);
-        
-        // Listen for visualViewport changes (better zoom detection)
-        if (window.visualViewport) {
-            window.visualViewport.addEventListener('resize', detectZoom);
-        }
-
-        return () => {
-            window.removeEventListener('resize', detectZoom);
-            if (window.visualViewport) {
-                window.visualViewport.removeEventListener('resize', detectZoom);
-            }
-        };
-    }, []);
-
     return (
-        <header className={`header ${isZoomed ? 'zoomed' : ''}`}>
+        <header className="header-section">
             <div className="header-container">
                 
                 {/* Nav-left (only visible on mobile) */}
