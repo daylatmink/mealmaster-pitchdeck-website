@@ -50,7 +50,7 @@ const Header = () => {
                         </div>
                     </div>
                     
-                    <div className="nav-search nav-search-mobile">
+                    <div className="nav-search">
                         <img src={SearchIcon} alt="Search" />
                     </div>
                 </div>
@@ -72,7 +72,7 @@ const Header = () => {
                         <li><a href="#">Community</a></li>
                     </ul>
 
-                    <div className="nav-search nav-search-desktop">
+                    <div className="nav-search">
                         <img src={SearchIcon} alt="Search" />
                     </div>
                 </div>

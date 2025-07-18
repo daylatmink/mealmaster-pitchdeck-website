@@ -9,40 +9,42 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
     gap: 40px;
 }
 
 .cta-subtitle {
     font-weight: bold;
-    line-height: 1.4;
-    font-size: 1.7vw;
     color: #333;
+    line-height: 1.4;
+    width: stretch;
+    font-size: 23.8px;
 }
 
 .cta-buttons {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: nowrap;
+    gap: 10px;
 }
 
 /* =============== Button Style =============== */
 
 .cta-buttons .icon-button {
-    font-size: 2.5rem;
     display: flex;
     align-items: center;
-    padding: 20px 80px 20px 30px;
     background: #214ECF;
     color: white;
     font-weight: bold;
-    border-radius: 20px;
     text-decoration: none;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
     white-space: nowrap;
+
+    font-size: 2.5rem;
+    padding: 20px 70px 20px 40px;
+    border-radius: 40px;
 }
 
 .cta-buttons .icon-button:hover {
@@ -52,70 +54,114 @@
 
 
 /* =============== Giai đoạn 2: 769px → 1024px =============== */
-
-@media (max-width: 1024px) and (min-width: 721px) {
-    
+@media (max-width: 1280px) and (min-width: 1025px) {
     .cta-container {
-        flex-direction: row;
         align-items: flex-start;
+        margin-top: -15px;
     }
-
     .cta-subtitle {
-        font-size: 25px;
-        max-width: 55%;
+        font-size: 20px;
         text-align: left;
+        width: stretch;
     }
 
     .cta-buttons {
-        margin-top: 35px;
-        flex-direction: column;
-        align-items: flex-end;
-        max-width: 300px;
+        margin-top: 30px;
+        width: 400px;
     }
 
     .cta-buttons .icon-button {
-        font-size: 2rem;
-        padding: 12px 50px 12px 20px;
-        width: 100%;
+        font-size: 2.2rem;
+        padding: 10px 20px 10px 30px;
+        border-radius: 28px;
+        justify-content: left;
     }
 }
 
-@media (max-width: 720px) and (min-width: 476px) {
-  .cta-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    text-align: center;
-  }
-
-  .cta-subtitle {
-    font-size: 18px;
-    max-width: 90vw;
-    text-align: center;
-  }
-
-  .cta-buttons {
-    width: 100%; /* 👈 Đảm bảo chiếm hết chiều ngang */
-    margin-top: -30px;
+@media (max-width: 1024px) and (min-width: 901px) {
     
-    display: flex;
-    gap: 1vw;
-    padding: 0 16px; /* 👈 Tạo khoảng cách với viền ngoài */
-  }
+    .cta-container {
+        align-items: flex-start;
+        margin-top: -15px;
+    }
 
-  .cta-buttons .icon-button {
-    margin: 0 auto;
-    font-size: 1.8rem;
-    padding: 10px 40px;
-    width: 30vw;
-  }
+    .cta-subtitle {
+        font-size: 26px;
+        text-align: left;
+        width: stretch;
+    }
+
+    .cta-buttons {
+        margin-top: 20px;
+        flex-direction: column;
+        width: 370px;
+        height: stretch;
+    }
+
+    .cta-buttons .icon-button {
+        font-size: 2.2rem;
+        padding: 5px 0px 5px 40px;
+        width: 80%;
+        height: 40%;
+        border-radius: 35px;
+        justify-content: left;
+    }
 }
 
-
-/* =============== Giai đoạn 4: ≤475px =============== */
-
-@media (max-width: 475px) {
+@media (max-width: 900px) and (min-width: 769px) {
     .cta-container {
+        align-items: flex-start;
+        margin-top: -5px;
+    }
+    .cta-subtitle {
+        font-size: 15px;
+        text-align: left;
+    }
+    .cta-buttons {
+        margin-top: 5px;
+        height: stretch;
+    }
+    .cta-buttons .icon-button {
+        font-size: 1.5rem;
+        padding: 10px 25px 10px 20px;
+        border-radius: 23px;
+        justify-content: left;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+    
+    .cta-container {
+        align-items: flex-start;
+        margin-top: -10px;
+    }
+
+    .cta-subtitle {
+        font-size: 18.5px;
+        text-align: left;
+        width: stretch;
+    }
+
+    .cta-buttons {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 200px;
+        gap: 5px;
+    }
+
+    .cta-buttons .icon-button {
+        font-size: 1.5rem;
+        padding: 10px 0px 10px 25px;
+        width: 90%;
+        border-radius: 22px;
+        justify-content: left;
+    }
+}
+
+@media (max-width: 576px) {
+    .cta-container {
+        margin-top: -10px;
         flex-direction: column;
         align-items: center;
         gap: 20px;
@@ -123,22 +169,24 @@
     }
 
     .cta-subtitle {
-        font-size: 16px;
-        max-width: 90vw;
+        font-size: 20px;
         text-align: center;
     }
 
     .cta-buttons {
+        width: 100%; /* 👈 Đảm bảo chiếm hết chiều ngang */
         margin-top: -20px;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
+        
+        display: flex;
+        gap: 15px;
+        padding: 0 16px; /* 👈 Tạo khoảng cách với viền ngoài */
     }
 
     .cta-buttons .icon-button {
-        font-size: 1.7rem;
-        padding: 12px 30px;
-        width: 100%;
-        max-width: 280px;
+        margin: 0 auto;
+        height: 30px;
+        font-size: 1.8rem;
+        border-radius: 30px;
+        justify-content: left;
     }
 }
