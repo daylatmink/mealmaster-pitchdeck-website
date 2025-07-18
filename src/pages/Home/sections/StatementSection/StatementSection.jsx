@@ -8,7 +8,9 @@ const StatementSection = () => {
         <section className="statement-section">
             <div className="statement-container">
 
-                <img className="background-overlay"src={orange}></img>
+                <div className="background-overlay">
+                    <img src={orange} />
+                </div>
                 
                 <div className="content">
                     <h2 className="statement-text">

@@ -9,6 +9,7 @@
     /**/
     gap: 20px;
     height: 60px;
+    overflow: visible;
 }
 
 
@@ -36,7 +37,6 @@
     /**/
     width: 45px;
     height: 45px;
-    padding: 8px;
 }
 .hamburger span {
     background: #214ECF;
@@ -44,16 +44,16 @@
     width: 100%;
     border-radius: 2px;
     /**/
-    height: 3px;
+    height: 2.5px;
 }
 .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(8px, 8px);
+    transform: rotate(45deg) translate(25%, 180%);
 }
 .hamburger.active span:nth-child(2) {
     opacity: 0;
 }
 .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(8px, -8px);
+    transform: rotate(-45deg) translate(25%, -200%);
 }
 /* Dropdown Menu */
 .dropdown-menu {

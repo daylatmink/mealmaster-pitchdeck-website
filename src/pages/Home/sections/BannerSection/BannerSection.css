@@ -7,10 +7,13 @@
     background-color: #214ECF;
     margin: 20px;
     border-radius: 20px;
+    height: 430px;
+    overflow: hidden;
 }
 .banner-inner img.mascot-picture {
     width: 100%;
     height: auto;
+    margin-top: -200px;
     display: block;
 }
 
