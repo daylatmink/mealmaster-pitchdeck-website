@@ -337,7 +337,7 @@
     .header-logo {
         order: 2;
         margin-left: 0px;
-        width: stretch;
+        /*width: stretch;*/
     }
     .header-logo :nth-child(1) {
         height: 35px;
