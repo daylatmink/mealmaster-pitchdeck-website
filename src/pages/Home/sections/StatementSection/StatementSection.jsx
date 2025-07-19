@@ -1,12 +1,16 @@
 import React from 'react';
 import './StatementSection.css';
 
+import orange from "./orange.png";
+
 const StatementSection = () => {
     return (
         <section className="statement-section">
             <div className="statement-container">
 
-                <div className="background-overlay"></div>
+                <div className="background-overlay">
+                    <img src={orange} />
+                </div>
                 
                 <div className="content">
                     <h2 className="statement-text">

@@ -13,7 +13,7 @@
     text-align: center;
     flex-wrap: wrap;
 
-
+    overflow: visible;
     max-width: min(100vw, 1920px);
 }
 

@@ -20,8 +20,9 @@ main > * > * {
     
     */
     /*điều chỉnh chiều rộng nội dung ở đây*/
-    max-width: min(80vw, 1600px);
+    max-width: min(90vw, 1600px);
 
+    overflow: hidden;
     margin: 0 auto;
 }
 
