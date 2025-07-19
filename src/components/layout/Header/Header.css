@@ -82,8 +82,8 @@
     color: #214ECF;
     text-decoration: none;
     font-weight: 500;
-    font-size: 18px;
-    padding: 12px 0;
+    font-size: 16px;
+    padding: 10px 0;
     border-bottom: 1px solid rgba(33, 78, 207, 0.1);
     transition: all 0.3s ease;
 }
@@ -121,7 +121,7 @@
     align-items: center;
     position: relative;
     justify-content: space-between;
-    /*width: stretch;*/
+    width: 100%;
     /**/
     order: 2;
     display: flex;
@@ -147,7 +147,7 @@
     color: #000;
     font-weight: 500;
     /**/
-    font-size: 20px;
+    font-size: 16px;
 }
 .nav-links a:hover {
     text-decoration: underline;
@@ -199,7 +199,7 @@
     /**/
     border-radius: 15px;
     padding: 0px 10px;
-    font-size: 20px;
+    font-size: 16px;
     height: 45px;
     width: 110px;
 }
@@ -234,15 +234,12 @@
 
     /* Nav */
     .nav-right {
-        gap: 15px;
+        gap: 10px;
     }
     .nav-links {
         gap: 20px;
         height: 36px;
         width: 330px;
-    }
-    .nav-links a {
-        font-size: 15px;
     }
     .nav-search {
         width: 35px;
@@ -251,11 +248,10 @@
     
     /* Auth */
     .header-auth {
-        gap: 7px;
+        gap: 5px;
     }
     .header-btn {
         border-radius: 10px;
-        font-size: 18px;
         height: 35px;
         width: 100px;
     }
@@ -286,7 +282,7 @@
 
     .header-logo {
         order: 2;
-        /*width: stretch;*/
+        width: 100%;
     }
     .header-logo :nth-child(1) {
         height: 40px;
@@ -305,7 +301,6 @@
     }
     .header-btn {
         border-radius: 10px;
-        font-size: 18px;
         height: 35px;
         width: 100px;
     }
@@ -337,7 +332,7 @@
     .header-logo {
         order: 2;
         margin-left: 0px;
-        /*width: stretch;*/
+        width: 100%;
     }
     .header-logo :nth-child(1) {
         height: 35px;
@@ -357,7 +352,6 @@
     .header-btn {
         border-radius: 10px;
         padding: 0px 3px;
-        font-size: 15px;
         height: 33px;
         width: 65px;
     }

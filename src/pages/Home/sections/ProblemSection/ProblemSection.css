@@ -1,76 +1,26 @@
 .problem-container {
-    display: flex;
-
-    flex-wrap: wrap;
-    background: #214ECF;
-
     font-family: 'Google Sans', sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
     background: #214ECF;
-    padding: 3rem 1rem;
-    margin: 0 auto;
+    display: flex;
 }
-
-
-
-
-
 
 .problem-left {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     justify-content: space-between;
-    flex: 1 1 300px;
-    padding: 1rem;
 }
-
 .problem-left img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
     object-fit: cover;
-    border-radius: 16px;
-    transform: scale(1.7);
-    margin: 0 auto;
 }
-
-
-
 .problem-buttons {
     display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-    margin: 0 auto;
 }
-
-.problem-buttons .icon-button {
-    padding: 1.2rem 2rem;
-    font-size: 1.2rem;
-    border-radius: 50px;
-    font-weight: bold;
-
-}
-
-
-.problem-buttons .label {
-    font-size: 3rem;
-    padding: 0px 53px 0px 0px;
-    margin: 0 auto;
-}
-
 .button1 {
     background: #F2674A;
-    border-radius: 50px;
 }
 .button2 {
     background: #F2674A;
-    border-radius: 50px;
 }
 .button1:hover {
     transform: scale(1.05);
@@ -84,200 +34,170 @@
 }
 
 
-
-
-
-
-
-
-.problem-right {
-    flex: 1 1 500px;
-    min-width: 280px;
-    color: white;
-}
-
-
-.problem-title {
-    font-size: clamp(1.5rem, 3.5vw, 2.5rem);
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-}
-
-
 .problem-icons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 cột đều nhau */
-    gap: 1.5rem;
-    margin-top: 2rem;
+    justify-items: center;
 }
-
-
-.problem-icon-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 160px;
-    text-align: center;
-}
-
-
 .problem-icon-box {
     background: #F2674A;
-    border-radius: 20px;
-    width: 130%;
-    aspect-ratio: 1 / 1; /* giữ box vuông */
+    aspect-ratio: 1 / 1; 
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
-
-.problem-icon-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: scale(2.0);
-}
-
-.problem-caption {
-    margin-top: 0.5rem;
-    font-size: clamp(0.9rem, 1.3vw, 1.1rem);
-}
-
 .problem-item {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 120px;
     text-align: center;
-    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
 }
-
-.problem-item img {
-    width: 60px;
-    height: 60px;
-}
-
 .problem-arrow {
     margin: 0 auto;
     text-align: center;
     animation: moveDown 1s ease-in-out infinite;
 }
+.problem-cta {
+    color: #F5EEE6;
+    text-align: center;
+    
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.problem-left {
+    overflow: hidden;
+    width: 100%;
+}
+
+.problem-container {
+    max-width: min(100vw, 1920px);
+    padding: min(60px, 3.3vw) min(27px, 1.5vw);
+}
+.problem-left img {
+    border-radius: min(27px, 1.5vw);
+}
+.problem-buttons {
+    width: 100%;
+    gap: min(27px, 1.5vw);
+    padding-top: min(27px, 1.5vw);
+}
+.problem-buttons .icon-button {
+    font-size: min(39px, 2.1vw);
+    padding: min(27px, 1.5vw);
+}
+
+.problem-right {
+    color: white;
+    overflow: hidden;
+    margin-top: -min(60px, 3.3vw);
+}
+.problem-title {
+    margin-left: min(54px, 3vw);
+    font-size: min(65px, 3.5vw);
+    font-weight: bold;
+}
+.problem-icons {
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: center;
+    gap: min(50px, 2.5vw);
+}
+.problem-item {
+    margin-top: -min(20px, 0.8vw);
+    max-width: min(200px, 11vw);
+}
+.problem-icon-box {
+    width: min(170px, 9vw);
+    overflow: hidden;
+    border-radius: min(30px, 1.5vw);
+}
+.problem-icon-box img {
+    width: min(150px, 8vw);
+    object-fit: cover;
+}
+.problem-caption {
+    font-size: min(23px, 1.3vw);
+}
+.problem-arrow img {
+    margin-top: min(10px, 0.5vw);
+    width: min(130px, 7vw);
+}
 @keyframes moveDown {
     0% { transform: translateY(0); }
-    50% { transform: translateY(10px); }
+    50% { transform: translateY(min(10px, 0.5vw)); }
     100% { transform: translateY(0); }
 }
 .problem-cta {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    font-weight: bold;
-    margin-top: 2rem;
-    color: #F5EEE6;
-    text-align: center;
+    margin-top: min(20px, 1vw);
+    font-size: min(49px, 2.6vw);
+}
+.problem-buttons-zoomed {
+    display: none;
 }
 
 
 
-/* Tablet and below */
-@media (max-width: 992px) {
-    .problem-section {
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 768px) {
+    .problem-left {
+        display: none;
+    }
+    .problem-buttons-zoomed {
+        display: flex;
     }
 
-    .problem-left, .problem-right {
-        text-align: center;
-        max-width: 90%;
+    .problem-container {
+        padding: 20px 0px;
     }
-
     .problem-title {
-        font-size: 1.8rem;
+        text-align: center;
+        font-size: 27px;
+        font-weight: bold;
     }
-
-    .problem-arrow {
-        margin-top: 0;
-    }
-}
-
-/* Mobile */
-@media (max-width: 576px) {
-    .problem-left img {
-        max-width: 80%;
+    
+    .problem-icons {
+        width: min(100%, 576px);
+        margin-top: 30px;
     }
 
     .problem-icon-box {
-        width: 100%;
+        width: max(17vw, 80px);
+        overflow: hidden;
+        border-radius: max(4vw, 20px);
     }
-
-    .problem-buttons .icon-button {
-        font-size: 0.9rem;
-        padding: 0.8rem 1.5rem;
+    .problem-icon-box img {
+        width: max(15vw, 70px);
     }
-
+    .problem-caption {
+        margin-top: 4px;
+        font-size: max(2.4vw, 12px);
+        width: max(20vw, 80px);
+    }
+    .problem-arrow img {
+        margin-top: 10px;
+        width: 80px;
+    }
     .problem-cta {
-        font-size: 1.2rem;
-    }
-}
-@media (max-width: 480px) {
-    .problem-section {
-        padding: 1.5rem 1rem;
-        gap: 2rem;
-        justify-items: center;
-    }
-
-    .problem-left {
-        padding: 0;
-    }
-
-    .problem-left img {
-        max-width: 80%;
-        transform: scale(1);
-        margin-bottom: 1rem;
+        margin-top: 20px;
+        font-size: 23px;
     }
 
     .problem-buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 0.8rem;
-        text-align: center;
-        display: flex;                      /* Flex để canh giữa */
-        justify-content: center;           /* Căn giữa ngang */
-        align-items: center;
+        gap: 30px;
+        padding-top: 30px;
     }
-
     .problem-buttons .icon-button {
-        font-size: 1rem;
-        padding: 0.8rem 1rem;
-        width: 100%;
-        max-width: 280px;
-    }
-    .problem-buttons .label {
-        font-size: 1rem;
-
+        font-size: 18px;
+        padding: 15px 30px 15px 25px;
+        border-radius: 20px;
     }
 
-    .problem-title {
-        font-size: 1rem;
-        line-height: 1.4;
-        text-align: center;
-    }
-
-    .problem-caption {
-        font-size: 0.9rem;
-    }
-
-    .problem-icons {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        justify-items: center;
-    }
-
-    .problem-icon-box {
-        width: 100%;
-    }
-
-    .problem-cta {
-        font-size: 1.1rem;
-        padding: 0 0.5rem;
-    }
+    
 }
+
+
+
+
+
+
+
+
