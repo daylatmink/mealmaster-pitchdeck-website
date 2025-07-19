@@ -56,9 +56,6 @@
     transform: translateY(-20px);
 
 }
-.solution-card:hover {
-    transform: translateY(-5px);
-}
 
 .solution-card-img {
     transform: scale(0.6);

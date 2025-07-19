@@ -2,7 +2,7 @@
 
 .statement-container {
   position: relative;
-  min-height: 100vh;
+  height: 50vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,7 +36,7 @@
 }
 
 .statement-text {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 800;
   color: #ffffff;
   line-height: 1.2;
@@ -46,7 +46,7 @@
 
 @media (max-width: 768px) {
   .statement-text {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
   
   .content {
@@ -54,8 +54,8 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .statement-text {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 }

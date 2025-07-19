@@ -1,9 +1,5 @@
 /* =============== CTA Section =============== */
 
-.cta-section {
-    margin-top: -20px;
-}
-
 .cta-container {
     display: flex;
     flex-direction: row;
@@ -17,12 +13,11 @@
     font-weight: bold;
     color: #333;
     line-height: 1.4;
-    width: auto;
-    font-size: 23.8px;
+    font-size: 25px;
+    max-width: 1000px;
 }
 
 .cta-buttons {
-    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +28,6 @@
 
 .cta-buttons .icon-button {
     display: flex;
-    align-items: center;
     background: #214ECF;
     color: white;
     font-weight: bold;
@@ -43,9 +37,10 @@
     transition: all 0.3s ease;
     white-space: nowrap;
 
-    font-size: 2.5rem;
+    font-size: 39px;
     padding: 20px 70px 20px 40px;
     border-radius: 40px;
+    justify-content: left;
 }
 
 .cta-buttons .icon-button:hover {
@@ -54,115 +49,60 @@
 }
 
 
-/* =============== Giai đoạn 2: 769px → 1024px =============== */
 @media (max-width: 1280px) and (min-width: 1025px) {
-    .cta-container {
-        align-items: flex-start;
-        margin-top: -15px;
-    }
     .cta-subtitle {
         font-size: 20px;
-        text-align: left;
-        /*width: stretch;*/
     }
-
-    .cta-buttons {
-        margin-top: 30px;
-        width: 400px;
-    }
-
     .cta-buttons .icon-button {
-        font-size: 2.2rem;
+        font-size: 39px;
         padding: 10px 20px 10px 30px;
         border-radius: 28px;
-        justify-content: left;
     }
 }
 
 @media (max-width: 1024px) and (min-width: 901px) {
-    
-    .cta-container {
-        align-items: flex-start;
-        margin-top: -15px;
-    }
-
     .cta-subtitle {
-        font-size: 26px;
-        text-align: left;
-        /*width: stretch;*/
+        font-size: 16px;
     }
-
-    .cta-buttons {
-        margin-top: 20px;
-        flex-direction: column;
-        width: 370px;
-        /*height: stretch;*/
-    }
-
     .cta-buttons .icon-button {
-        font-size: 2.2rem;
+        font-size: 31px;
         padding: 5px 0px 5px 40px;
-        width: 80%;
-        height: 40%;
         border-radius: 35px;
-        justify-content: left;
     }
 }
 
 @media (max-width: 900px) and (min-width: 769px) {
-    .cta-container {
-        align-items: flex-start;
-        margin-top: -5px;
-    }
     .cta-subtitle {
-        font-size: 15px;
-        text-align: left;
-    }
-    .cta-buttons {
-        margin-top: 5px;
-        /*height: stretch;*/
+        font-size: 16px;
     }
     .cta-buttons .icon-button {
-        font-size: 1.5rem;
+        font-size: 27px;
         padding: 10px 25px 10px 20px;
         border-radius: 23px;
-        justify-content: left;
     }
 }
 
 @media (max-width: 768px) and (min-width: 577px) {
-    
-    .cta-container {
-        align-items: flex-start;
-        margin-top: -10px;
-    }
 
     .cta-subtitle {
-        font-size: 18.5px;
-        text-align: left;
-        /*width: stretch;*/
+        font-size: 19px;
     }
 
     .cta-buttons {
-        margin-top: 20px;
         flex-direction: column;
         align-items: flex-end;
-        width: 200px;
         gap: 5px;
     }
 
     .cta-buttons .icon-button {
-        font-size: 1.5rem;
+        font-size: 27px;
         padding: 10px 0px 10px 25px;
-        width: 90%;
         border-radius: 22px;
-        justify-content: left;
     }
 }
 
 @media (max-width: 576px) {
     .cta-container {
-        margin-top: -10px;
         flex-direction: column;
         align-items: center;
         gap: 20px;
@@ -170,24 +110,18 @@
     }
 
     .cta-subtitle {
-        font-size: 20px;
+        font-size: 16px;
         text-align: center;
     }
 
     .cta-buttons {
-        width: 100%; /* 👈 Đảm bảo chiếm hết chiều ngang */
-        margin-top: -20px;
-        
-        display: flex;
-        gap: 15px;
-        padding: 0 16px; /* 👈 Tạo khoảng cách với viền ngoài */
+        gap: 10px;
     }
 
     .cta-buttons .icon-button {
-        margin: 0 auto;
         height: 30px;
-        font-size: 1.8rem;
+        padding: 15px 50px 15px 20px;
+        font-size: 23px;
         border-radius: 30px;
-        justify-content: left;
     }
 }

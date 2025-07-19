@@ -26,8 +26,7 @@ const ProblemSection = () => {
                 <div className="problem-right">
 
                     <h2 className="problem-title">
-                        Nấu ăn lành mạnh tưởng dễ, <br />
-                        nhưng lại khiến nhiều người bối rối mỗi ngày
+                        Nấu ăn lành mạnh tưởng dễ, nhưng lại khiến nhiều người bối rối mỗi ngày
                     </h2>
 
                     <div className="problem-icons">
@@ -65,8 +64,13 @@ const ProblemSection = () => {
                         <img src={arrow} alt="Arrow Down" />
                     </div>
 
-                    <p className="problem-cta">Nếu bạn muốn A B C D gì đó, hãy tải MealMaster!</p>
-
+                    <div className="problem-suggest">
+                        <p className="problem-cta">Nếu bạn muốn A B C D gì đó,<br></br> hãy tải MealMaster!</p>
+                        <div className="problem-buttons problem-buttons-zoomed">
+                            <IconButton label="Tải ứng dụng" href="#download" className="button1" />
+                            <IconButton label="Đăng ký ngay" href="#signup" className="button2" />
+                        </div>
+                    </div>
                 </div>
 
             </div>
