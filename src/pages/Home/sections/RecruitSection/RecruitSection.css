@@ -25,18 +25,24 @@
 
 .recruit-cta {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 24px 0;
 }
 
 .recruit-cta a {
     display: inline-block;
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    font-weight: 600;
+    padding: 12px 24px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
     text-decoration: none;
-    transition: all 0.3s ease;
+    border-radius: 10px;
+    min-width: 160px;
+    max-width: 240px;
+    width: fit-content;
+    box-sizing: border-box;
 }
 
 .btn-primary {
@@ -62,8 +68,19 @@
     font-size: larger;
     font-weight: bold;
 }
-@media (min-width: 640px) {
+@media (max-width: 960px) {
+    .recruit-title {
+        font-size: 2rem;
+    }
     .recruit-cta {
-        flex-direction: row;
+         flex-direction: row;
+     }
+}
+
+@media (max-width: 480px) {
+    .recruit-title {
+        font-size: 1rem;
     }
 }
+
+
