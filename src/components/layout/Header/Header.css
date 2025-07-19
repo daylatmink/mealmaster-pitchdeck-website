@@ -19,7 +19,7 @@
     /**/
     /*order: none;*/
     display: none;
-    gap: 15px;/
+    gap: 15px;
 }
 .nav-mobile-menu {
     position: relative;
@@ -179,9 +179,11 @@
 .header-auth {
     order: 3;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: center;
     /**/
     gap: 10px;
+    margin-left: auto;
 }
 .header-btn {
     background: #ffffff;
@@ -294,7 +296,7 @@
     }
 
     .nav-right {
-        /*order: none;*/
+        order: 0;
         display: none;
     }
     
@@ -335,7 +337,7 @@
     .header-logo {
         order: 2;
         margin-left: 0px;
-        /*width: stretch;*/
+        width: stretch;
     }
     .header-logo :nth-child(1) {
         height: 35px;
@@ -345,7 +347,7 @@
     }
 
     .nav-right {
-        /*order: none;*/
+        order: 0;
         display: none;
     }
     
