@@ -22,7 +22,6 @@ const Home = () => (
     <main>
         <Header />
 
-        <Testing />
 
         <HeroSection />
         <CTASection />

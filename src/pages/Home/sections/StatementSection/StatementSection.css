@@ -2,7 +2,7 @@
 
 .statement-container {
   position: relative;
-  height: 50vw;
+  height: min(50vw, 1000px);
   display: flex;
   align-items: center;
   justify-content: center;
