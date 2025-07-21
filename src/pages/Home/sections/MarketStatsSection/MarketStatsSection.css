@@ -1,76 +1,78 @@
-/* Khối bao toàn section */
+
 .market-stats-section {
     background-color: white;
-    padding: 20px;
-    box-sizing: border-box;
-    width: 100%;
 }
-
-/* Container chứa hai bên trái/phải */
 .market-stats-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
-    width: 100%;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  gap: 20px; /* Giữ nguyên khoảng cách 20px giữa hai cột */
+  flex-direction: row;
 }
 
-/* Hai khối trái/phải */
-.stats-left,
+.stats-left {
+  /* flex-grow: 4 (chiếm 4 phần), flex-shrink: 0 (không co lại), flex-basis: tính toán kích thước ban đầu */
+  flex: 0 0 calc(4/9 * 100% - 30px); /* 4/9 tổng chiều rộng trừ đi một nửa gap */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+}
+
 .stats-right {
-    flex: 1 1 calc(50% - 10px);
-    min-width: 0;
-    border-radius: 16px;
-    padding: 40px 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Google Sans', sans-serif;
+  /* flex-grow: 5 (chiếm 5 phần), flex-shrink: 0 (không co lại), flex-basis: tính toán kích thước ban đầu */
+  flex: 0 0 calc(5/9 * 100% - 10px); /* 5/9 tổng chiều rộng trừ đi một nửa gap */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
 }
 
-/* Màu nền từng bên */
 .stats-left {
     background-color: #0047FF;
     color: white;
+    padding: 60px 10px;
 }
-
 .stats-right {
     background-color: #FF6B4A;
     color: white;
 }
 
-/* Ảnh & chữ */
+
 .stats-icon {
-    width: 500px;
-    margin: 20px 0;
+    width: 60%;
 }
 
 .stats-chart {
-    width: 100%;
-    max-width: 1000px;
-    height: auto;
+    width: 90%;
     object-fit: contain;
 }
 
 .stats-title,
 .stats-subtitle {
-    font-size: 50px;
+    font-size: min(42px, 2.2vw);
+    padding: 0px 30px;
     text-align: center;
-    line-height: 1.4;
-    margin-bottom: 10px;
+    line-height: 1.2;
 }
 
-/* Responsive cho mobile */
+
 @media (max-width: 768px) {
     .market-stats-container {
         flex-direction: column;
+        margin-top: 30px;
     }
 
     .stats-left,
     .stats-right {
+        padding: 20px;
         flex: 1 1 100%;
+    }
+    
+    .stats-title,
+    .stats-subtitle {
+        font-size: 21px;
     }
 }

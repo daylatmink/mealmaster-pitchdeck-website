@@ -3,12 +3,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 80px 40px;
-    background: #fffaf6;
     flex-wrap: wrap;
     font-family: 'Google Sans', sans-serif;
 }
 
-.join-left, .join-right {
+.join-left,
+.join-right {
     flex: 1;
     padding: 20px;
     min-width: 300px;
@@ -59,14 +59,13 @@
     align-items: center;
     justify-content: space-between;
     border-radius: 12px;
-    padding: 12px 16px;
+    padding: 10px 14px; /* giảm padding */
     color: white;
     font-weight: bold;
-    font-size: 40px;
-    min-width: 200px;
-    min-height: 120px;
+    font-size: 28px; /* giảm font-size */
+    min-width: 160px; /* giảm chiều rộng tối thiểu */
+    min-height: 90px; /* giảm chiều cao tối thiểu */
     cursor: pointer;
-
 }
 .join-icon:hover {
     opacity: 1.1;
@@ -82,7 +81,7 @@
 }
 
 .join-icon img {
-    height: 120px;
+    height: 64px; /* nhỏ hơn */
     margin-right: 8px;
 }
 
@@ -97,4 +96,115 @@
 .play-btn:hover {
     opacity: 0.8;
     transform: scale(1.05);
- }
+}
+
+/* ---------- Responsive Breakpoints ---------- */
+
+/* Under 1280px (small desktop) */
+@media (max-width: 1280px) and (min-width: 901px) {
+    .join-title {
+        font-size: 56px;
+    }
+
+    .join-description {
+        font-size: 1.8rem;
+    }
+
+    .join-buttons {
+        gap: 30px;
+    }
+
+    .join-icon {
+        font-size: 36px;
+        min-height: 110px;
+    }
+
+    .join-icon img {
+        height: 100px;
+    }
+}
+
+/* Under 900px (tablet) */
+@media (max-width: 900px) and (min-width: 577px) {
+    .join-container {
+        flex-direction: column;
+        padding: 60px 24px;
+    }
+
+    .join-left,
+    .join-right {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .join-left {
+        align-items: center;
+    }
+
+    .join-title {
+        font-size: 44px;
+        text-align: center;
+    }
+
+    .join-description {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .join-buttons {
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .join-icon {
+        flex-direction: row;
+        font-size: 28px;
+        min-width: 160px;
+        min-height: 100px;
+    }
+
+    .join-icon img {
+        height: 80px;
+        margin: 0 0 8px 0;
+    }
+
+    .play-btn {
+        margin-left: 0;
+        font-size: 24px;
+    }
+}
+
+/* Under 576px (mobile) */
+@media (max-width: 576px) {
+    .join-title {
+        font-size: 32px;
+    }
+
+    .join-badge {
+        font-size: 16px;
+        padding: 4px 10px;
+        margin-bottom: 12px;
+    }
+
+    .join-description {
+        font-size: 1.2rem;
+    }
+    
+    .join-buttons {
+        gap: 10px;
+    }
+    .join-icon {
+        font-size: 20px;
+        min-width: 70px;
+        min-height: 80px;
+        padding: 0px 40px 0px 5px; /* giảm padding */
+    }
+    .join-icon img {
+        height: 50px;
+        margin: 0px;
+    }
+
+    .play-btn {
+        font-size: 16px;
+    }
+}

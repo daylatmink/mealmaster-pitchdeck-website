@@ -48,14 +48,14 @@
 
 .pan-left {
     position: absolute;
-    top: 50%;
-    transform: translateY(-110%);
+    width: 23%;
+    bottom: 230px;
     z-index: 1;
 }
 .pot-right {
     position: absolute;
-    top: 50%;
-    transform: translateY(-110%);
+    width: 15%;
+    bottom: 230px;
     z-index: 1;
 }
 
@@ -66,4 +66,10 @@
 
 .pot-right {
     right: 0;
+}
+
+@media (max-width: 900px) {
+    .pan-left, .pot-right {
+        display: none;
+    }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 
-import { Header, Footer } from "./shared";
+import { Header, Footer, Testing } from "./shared";
 import {
     HeroSection,
     CTASection,
@@ -21,6 +21,8 @@ import {
 const Home = () => (
     <main>
         <Header />
+
+        <Testing />
 
         <HeroSection />
         <CTASection />

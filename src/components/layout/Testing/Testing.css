@@ -1,0 +1,127 @@
+/* =============== testing Section =============== */
+
+.testing-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.testing-subtitle {
+    font-weight: bold;
+    color: #333;
+    line-height: 1.4;
+    font-size: 25px;
+    max-width: 1000px;
+}
+
+.testing-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* =============== Button Style =============== */
+
+.testing-buttons .icon-button {
+    display: flex;
+    background: #214ECF;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+
+    font-size: 39px;
+    padding: 20px 70px 20px 40px;
+    border-radius: 40px;
+    justify-content: left;
+}
+
+.testing-buttons .icon-button:hover {
+    background: #083db2;
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 1280px) and (min-width: 1025px) {
+    .testing-subtitle {
+        font-size: 20px;
+    }
+    .testing-buttons .icon-button {
+        font-size: 39px;
+        padding: 10px 20px 10px 30px;
+        border-radius: 28px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 901px) {
+    .testing-subtitle {
+        font-size: 16px;
+    }
+    .testing-buttons .icon-button {
+        font-size: 31px;
+        padding: 5px 0px 5px 40px;
+        border-radius: 35px;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 769px) {
+    .testing-subtitle {
+        font-size: 16px;
+    }
+    .testing-buttons .icon-button {
+        font-size: 27px;
+        padding: 10px 25px 10px 20px;
+        border-radius: 23px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+
+    .testing-subtitle {
+        font-size: 19px;
+    }
+
+    .testing-buttons {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 5px;
+    }
+
+    .testing-buttons .icon-button {
+        font-size: 27px;
+        padding: 10px 0px 10px 25px;
+        border-radius: 22px;
+    }
+}
+
+@media (max-width: 576px) {
+    .testing-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .testing-subtitle {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .testing-buttons {
+        gap: 10px;
+    }
+
+    .testing-buttons .icon-button {
+        height: 30px;
+        padding: 15px 50px 15px 20px;
+        font-size: 23px;
+        border-radius: 30px;
+    }
+}

@@ -9,9 +9,9 @@ const JoinSection = () => {
                 <div className="join-left">
                     <span className="join-badge">JOIN THE REVOLUTION</span>
                     <h2 className="join-title">
-                        HÃY THAM GIA<br />
-                        CÙNG CHÚNG TÔI THAY<br />
-                        ĐỔI CÁCH NGƯỜI VIỆT<br />
+                        HÃY THAM GIA
+                        CÙNG CHÚNG TÔI THAY
+                        ĐỔI CÁCH NGƯỜI VIỆT
                         ĂN UỐNG MỖI NGÀY!
                     </h2>
                 </div>

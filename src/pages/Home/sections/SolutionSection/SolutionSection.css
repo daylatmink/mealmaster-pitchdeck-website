@@ -53,7 +53,7 @@
     background: #F2674A;
     justify-content: center;
     margin-top: 30px;
-    transform: translateY(-20px);
+    transform: translateY(-30px);
 
 }
 
@@ -73,4 +73,29 @@
     font-size: 1.25rem;
     font-weight:500;
     line-height: 1.2;
+}
+
+@media (max-width: 1280px) {
+    .solution-card {
+        margin: 0px 5%;
+        width: max(220px, calc(30% - 30px));
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .solution-card:nth-child(1) {
+        transform: translateY(0px);
+    }
+    .solution-card:nth-child(2) {
+        transform: translateY(0px);
+    }
+    .solution-card:nth-child(3) {
+        transform: translateY(0px);
+    }
+    .solution-card:nth-child(4) {
+        transform: translateY(0px);
+
+    }
+
 }

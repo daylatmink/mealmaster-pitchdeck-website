@@ -1,11 +1,10 @@
 .banner-container {
-    background-color: #F8F3EF; /* màu nền theo ảnh */
     padding: 0;
     position: relative;
+    min-width: min(95vw, 1600px);
 }
 .banner-inner {
     background-color: #214ECF;
-    margin: 20px;
     border-radius: 20px;
     height: 25vw;
     overflow: hidden;
@@ -22,7 +21,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #F8F3EF;
     font-family: 'Google Sans', sans-serif;
 }
 
